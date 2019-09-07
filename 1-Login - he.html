@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>1-Login - he</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">virable</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td><td>aa@aa.aa<datalist><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[1]</option><option>//input[@name='pass']</option><option>//div[@id='root']/div/div/form/div[3]/input</option><option>//div[3]/input</option><option>css=input[name="pass"]</option><option>userName</option><option>aa@aa.aa</option></datalist></td><td>userName</td>
+</tr>
+<tr><td>store</td><td>bestappever<datalist><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[1]</option><option>//input[@name='pass']</option><option>//div[@id='root']/div/div/form/div[3]/input</option><option>//div[3]/input</option><option>css=input[name="pass"]</option><option>name=email</option><option>password</option><option>bestappever</option></datalist></td><td>password</td>
+</tr>
+<tr><td>store</td><td>https://lista.atzma.im/he/home<datalist><option>https://lista.atzma.im/he/home</option></datalist></td><td>Lista.Home.he</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">open site</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>${Lista.Home.he}<datalist><option>${Lista}</option><option>https://atzma.im/he/home</option><option>Lista</option><option></option><option>${Lista.Home.he}</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForLocation</td><td>${Lista.Home.he}<datalist><option>1000</option><option>200</option><option>https://lista.atzma.im/he/home</option><option>${Lista.Home.he}</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>${Lista.Home.he}<datalist><option>1000</option><option>200</option><option>https://lista.atzma.im/he/home</option><option>${Lista.Home.he}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify home page menu</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//button[@class='header_menu_btn']<datalist><option>//button[@class='header_menu_btn']</option><option>link=להיכנס</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='עולמות עסקים'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תכונות'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להירשם'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לנהל את העסק שלך מהכיס'])[1]/preceding::a[2]</option><option>//a[contains(text(),'להיכנס')]</option><option>//div[@id='hero']/div/div/div[2]/div[2]/a</option><option>//a[contains(@href, '/he/login')]</option><option>//div[2]/a</option><option>css=a.login-btn</option></datalist></td><td>verify menu Visible</td>
+</tr>
+<tr><td>click</td><td>//button[@class='header_menu_btn']<datalist><option>//button[@class='header_menu_btn']</option><option>link=להיכנס</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='עולמות עסקים'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תכונות'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להירשם'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לנהל את העסק שלך מהכיס'])[1]/preceding::a[2]</option><option>//a[contains(text(),'להיכנס')]</option><option>//div[@id='hero']/div/div/div[2]/div[2]/a</option><option>//a[contains(@href, '/he/login')]</option><option>//div[2]/a</option><option>css=a.login-btn</option></datalist></td><td>open menu</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='menu_menu_wrap']<datalist><option>//div[@class='menu_menu_wrap']</option></datalist></td><td>menu list</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[text()='עלינו']<datalist><option>//a[text()='עלינו']</option></datalist></td><td>עלינו</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[text()='צרו קשר']<datalist><option>//a[text()='עלינו']</option><option>//a[text()='תמיכה']</option><option>//a[text()='צרו קשר']</option></datalist></td><td>צרו קשר</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[text()='FAQ']<datalist><option>//a[text()='עלינו']</option><option>//a[text()='FAQ']</option></datalist></td><td>FAQ'</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[text()='Terms of Use']<datalist><option>//a[text()='עלינו']</option><option>//a[text()='Terms of Use']</option></datalist></td><td>Terms of Use</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[text()='להיכנס']<datalist><option>//a[text()='Terms of Use']</option><option>//a[text()='עלינו']</option><option>//a[text()='להיכנס']</option></datalist></td><td>להיכנס</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[text()='להירשם']<datalist><option>//a[text()='Terms of Use']</option><option>//a[text()='עלינו']</option><option>//a[text()='להירשם']</option></datalist></td><td>להירשם</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href='https://instagram.com']<datalist><option>//a[text()='Terms of Use']</option><option>//a[text()='עלינו']</option><option>//a[@href='https://instagram.com']</option></datalist></td><td>instagram link</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="https://facebook.com"]<datalist><option>//a[text()='Terms of Use']</option><option>//a[text()='עלינו']</option><option>//a[@href="https://facebook.com"]</option></datalist></td><td>facebook link</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="https://twitter.com"]<datalist><option>//a[text()='Terms of Use']</option><option>//a[text()='עלינו']</option><option>//a[@href="https://twitter.com"]</option></datalist></td><td>twitter link</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/home/mobile/media/ic_arrow.svg"]<datalist><option>//img[@src="/public/home/mobile/media/ic_arrow.svg"]</option></datalist></td><td>arrows</td>
+</tr>
+<tr><td>click</td><td>//button[@class='header_menu_btn']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::img[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='עלינו'])[1]/preceding::img[2]</option><option>//img[@alt='menu']</option><option>//div[@id='app']/header/div/button/img</option><option>//img</option><option>css=img[alt="menu"]</option><option>//button[@class='header_menu_btn']</option></datalist></td><td>close menu</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[@class='menu_menu_wrap']<datalist><option>//div[@class='menu_menu_wrap']</option></datalist></td><td>menu list Not Visible</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify home page</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>link=להיכנס<datalist><option>link=להיכנס</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='עולמות עסקים'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תכונות'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להירשם'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לנהל את העסק שלך מהכיס'])[1]/preceding::a[2]</option><option>//a[contains(text(),'להיכנס')]</option><option>//div[@id='hero']/div/div/div[2]/div[2]/a</option><option>//a[contains(@href, '/he/login')]</option><option>//div[2]/a</option><option>css=a.login-btn</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/home/mobile/media/ic_lock.svg"]<datalist><option>//img[@src="/public/home/mobile/media/ic_lock.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='header_menu_btn']<datalist><option>link=להיכנס</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='עולמות עסקים'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תכונות'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להירשם'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לנהל את העסק שלך מהכיס'])[1]/preceding::a[2]</option><option>//a[contains(text(),'להיכנס')]</option><option>//div[@id='hero']/div/div/div[2]/div[2]/a</option><option>//a[contains(@href, '/he/login')]</option><option>//div[2]/a</option><option>css=a.login-btn</option><option>//button[@class='header_menu_btn']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='ATZMAIM']<datalist><option>link=להיכנס</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='עולמות עסקים'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תכונות'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להירשם'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לנהל את העסק שלך מהכיס'])[1]/preceding::a[2]</option><option>//a[contains(text(),'להיכנס')]</option><option>//div[@id='hero']/div/div/div[2]/div[2]/a</option><option>//a[contains(@href, '/he/login')]</option><option>//div[2]/a</option><option>css=a.login-btn</option><option>//span[text()='ATZMAIM']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//h2[text()='לנהל את העסק שלך מהכיס']<datalist><option>//h2[text()='לנהל את העסק שלך מהכיס']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//figcaption[text()='Business Management']<datalist><option>//figcaption[text()='Business Management']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//figcaption[text()='Client’s Subscriptions']<datalist><option>//figcaption[text()='Client’s Subscriptions']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//figcaption[text()='Appointments Calendar']<datalist><option>//figcaption[text()='Appointments Calendar']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/home/mobile/media/pic_iphone.png"]<datalist><option>//img[@src="/public/home/mobile/media/pic_iphone.png"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href='/he/signup']<datalist><option>//figcaption[text()='Appointments Calendar']</option><option>//a[@href='/he/signup']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/home#hero"]<datalist><option>//figcaption[text()='Appointments Calendar']</option><option>//a[@href="/he/home#hero"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/home#features"]<datalist><option>//figcaption[text()='Appointments Calendar']</option><option>//a[@href="/he/home#features"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/home#business_types"]<datalist><option>//figcaption[text()='Appointments Calendar']</option><option>//a[@href="/he/home#business_types"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login home page</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>link=להיכנס<datalist><option>link=להיכנס</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='עולמות עסקים'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תכונות'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להירשם'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לנהל את העסק שלך מהכיס'])[1]/preceding::a[2]</option><option>//a[contains(text(),'להיכנס')]</option><option>//div[@id='hero']/div/div/div[2]/div[2]/a</option><option>//a[contains(@href, '/he/login')]</option><option>//div[2]/a</option><option>css=a.login-btn</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify login elements</td></tr>
+</thead>
+<tbody>
+<tr><td>waitForVisible</td><td>name=email<datalist><option>name=email</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//form[@action='/check-login']<datalist><option>//form[@action='/check-login']</option><option>//div[@id='root']/div/div/form</option><option>//form</option><option>css=form</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/login/logo.svg"]<datalist><option>//img[@src="/public/login/logo.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='להיכנס']<datalist><option>//button[text()='להיכנס']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הירשם'])[1]/preceding::button[1]</option><option>//button[@type='submit']</option><option>//div[@id='root']/div/div/form/button[2]</option><option>//button[2]</option><option>css=button.login-form__button.login-button</option></datalist></td><td>להיכנס</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='Atzma.im']<datalist><option>//div[text()='Atzma.im']</option></datalist></td><td>Atzma.im</td>
+</tr>
+<tr><td>verifyVisible</td><td>name=email<datalist><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[2]</option><option>//input[@name='email']</option><option>//div[@id='root']/div/div/form/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="email"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@placeholder="הכנס אמייל "]<datalist><option>//input[@placeholder="הכנס אמייל "]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/login/mail.svg"]<datalist><option>//img[@src="/public/login/mail.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>name=pass<datalist><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[1]</option><option>//input[@name='pass']</option><option>//div[@id='root']/div/div/form/div[3]/input</option><option>//div[3]/input</option><option>css=input[name="pass"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@placeholder="הכנס ססמה"]<datalist><option>//input[@placeholder="הכנס ססמה"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/login/lock.svg"]<datalist><option>//img[@src="/public/login/lock.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='שכחת ססמה?']<datalist><option>//div[@id='root']/div/div</option><option>//div/div/div</option><option>css=div.sign-in-wrap</option><option>//span[text()='שכחת ססמה?']</option></datalist></td><td>שכחת ססמה?</td>
+</tr>
+<tr><td>verifyVisible</td><td>//footer[text()='עוד לא יצרת חשבון?']<datalist><option>//div[@id='root']/div/div</option><option>//div/div/div</option><option>css=div.sign-in-wrap</option><option>//footer[text()='עוד לא יצרת חשבון?']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login page</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//button[text()='להיכנס']<datalist><option>//button[text()='להיכנס']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הירשם'])[1]/preceding::button[1]</option><option>//button[@type='submit']</option><option>//div[@id='root']/div/div/form/button[2]</option><option>//button[2]</option><option>css=button.login-form__button.login-button</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הזן אימיייל וססמה']<datalist><option>//span[text()='שכחת ססמה?']</option><option>//div[@id='root']/div/div</option><option>//div/div/div</option><option>css=div.sign-in-wrap</option><option>//span[text()='הזן אימיייל וססמה']</option></datalist></td><td>הזן אימיייל וססמה</td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[2]</option><option>//input[@name='email']</option><option>//div[@id='root']/div/div/form/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="email"]</option></datalist></td><td>${userName}</td>
+</tr>
+<tr><td>type</td><td>name=pass<datalist><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[1]</option><option>//input[@name='pass']</option><option>//div[@id='root']/div/div/form/div[3]/input</option><option>//div[3]/input</option><option>css=input[name="pass"]</option></datalist></td><td>${password}</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/login/eye.svg"]<datalist><option>//img[@src="/public/login/eye.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/login/eye.svg"]<datalist><option>//img[@src="/public/login/eye.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/login/eye-off.svg"]<datalist><option>//img[@src="/public/login/eye.svg"]</option><option>//img[@src="/public/login/eye-off.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='להיכנס']<datalist><option>//button[text()='להיכנס']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הירשם'])[1]/preceding::button[1]</option><option>//button[@type='submit']</option><option>//div[@id='root']/div/div/form/button[2]</option><option>//button[2]</option><option>css=button.login-form__button.login-button</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//div[text()='Atzma.im']<datalist><option>verifyVisible</option><option>//div[text()='Atzma.im']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

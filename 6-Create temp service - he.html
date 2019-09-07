@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>6-Create temp service - he</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify categories element</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services</option><option>https://lista.atzma.im/he/catalog/services/categories</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='input-search-block']<datalist><option>//div[@class='input-search-block']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/ic-search.svg"]<datalist><option>//img[@src="/public/services/ic-search.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='add-button add-rtl']<datalist><option>//div[@class='add-button add-rtl']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='more_wrap']<datalist><option>//button[@class='more_wrap']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='רשימת קטגוריות']<datalist><option>//span[text()='רשימת קטגוריות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src='/public/services/ic_arrow_back.svg']<datalist><option>//img[@src='/public/services/ic_arrow_back.svg']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">add temp service</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//*[@class='add-button add-rtl']<datalist><option>//*[@class='add-button add-rtl']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services/adding<datalist><option>https://atzma.im/he/catalog/services/adding</option><option>https://lista.atzma.im/he/catalog/services/adding</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול..."]<datalist><option>//input[@placeholder="הזינו שם של טיפול..."]</option></datalist></td><td>Test טיפול services_createQueue</td>
+</tr>
+<tr><td>click</td><td>//span[text()='שייך לקטגוריה']<datalist><option>//span[text()='שייך לקטגוריה']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">add category</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//button[text()='הוסף טיפול חדש']<datalist><option>//button[text()='הוסף טיפול חדש']</option><option>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]<datalist><option>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]</option></datalist></td><td>Test category selenium</td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//span[text()='הוסף קטגוריה חדשה']<datalist><option>//button[@class='create-button false']</option><option>//span[text()='הוסף קטגוריה חדשה']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()='הוסף קטגוריה חדשה']<datalist><option>//span[text()='הוסף קטגוריה חדשה']</option><option>//button[@class='create-button false']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@class='bottom enabled']<datalist><option>//button[text()='הוסף טיפול חדש']</option><option>//button[@class='bottom enabled']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services/categories</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">go to categories list</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify category creation</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//span[text()='Test category selenium']<datalist><option>//span[text()='Test category selenium']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test category selenium</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='Test טיפול services_createQueue']<datalist><option>//p[text()='Test טיפול services_createQueue']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/ic-time-copy.svg"]<datalist><option>//img[@src="/public/services/ic-time-copy.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='30']</option><option>//span[text()='10']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='דקות']<datalist><option>//span[text()='דקות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='$']<datalist><option>//span[text()='$']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='50']<datalist><option>//span[text()='50']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='more_wrap']<datalist><option>//button[@class='more_wrap']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src='/public/services/ic_arrow_back.svg']<datalist><option>//img[@src='/public/services/ic_arrow_back.svg']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='Test category selenium']<datalist><option>//span[text()='Test category selenium']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='add-button add-rtl']<datalist><option>//div[@class='add-button add-rtl']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify service creation</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//p[text()='Test טיפול services_createQueue']<datalist><option>//p[text()='Test טיפול services_createQueue']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='עריכת טיפול']<datalist><option>//span[text()='עריכת טיפול']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/ic_arrow_back.svg"]<datalist><option>//img[@src="/public/services/ic_arrow_back.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@value="Test טיפול services_createQueue"]<datalist><option>//input[@value="Test טיפול services_createQueue"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='שם של טיפול']<datalist><option>//span[text()='שם של טיפול']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='Test category selenium']<datalist><option>//span[text()='Test category selenium']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='שם של קטגוריה']<datalist><option>//span[text()='שם של קטגוריה']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/chevron-right.svg"]<datalist><option>//img[@src="/public/services/chevron-right.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='משך']<datalist><option>//span[text()='משך']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='מחיר']<datalist><option>//span[text()='מחיר']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='צבע:']<datalist><option>//div[text()='צבע:']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='10 דקות']<datalist><option>//div[text()='30 דקות']</option><option>//div[text()='10 דקות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='$ 50']<datalist><option>//div[text()='$ 50']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/plus.svg"])[1]<datalist><option>xpath=(//img[@src="/public/services/plus.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/services/plus.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/minus.svg"])[1]<datalist><option>xpath=(//img[@src="/public/services/minus.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/services/minus.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@style='background: rgb(239, 165, 254); border-color: rgb(239, 165, 254);']<datalist><option>//div[@style='background: rgb(239, 165, 254); border-color: rgb(239, 165, 254);']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/check.svg"]<datalist><option>//img[@src="/public/services/check.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='bottom delete']<datalist><option>//button[@class='bottom delete']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='bottom disabled']<datalist><option>//button[@class='bottom disabled']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='circle-container']<datalist><option>//div[@class='circle-container']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='למחוק']<datalist><option>//button[text()='למחוק']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='לשמור']<datalist><option>//button[text()='לשמור']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/plus-square.svg"]<datalist><option>//img[@src="/public/services/plus-square.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/delete-blue.svg"]<datalist><option>//img[@src="/public/services/delete-blue.svg"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
