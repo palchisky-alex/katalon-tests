@@ -331,6 +331,12 @@
 <tr><td rowspan="1" colspan="3">delete reminder</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option><option>//a[@href="/he/reminders"]</option></datalist></td><td>תזכורת</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]<datalist><option>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>click</td><td>//span[text()='Temp Client for reminder katalon']<datalist><option>//span[text()='Temp Client for reminder katalon']</option><option>//span[text()='Temp Client katalon']</option></datalist></td><td>click on name</td>
+</tr>
 <tr><td>click</td><td>//p[text()='מחק']<datalist><option>//p[text()='מחק']</option></datalist></td><td>click on delete</td>
 </tr>
 <tr><td>verifyVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>deletion window</td>
@@ -390,6 +396,8 @@
 <tr><td>waitForElementPresent</td><td>//div[text()='Temp Client for reminder katalon']<datalist><option>//div[text()='Temp Client katalon']</option><option>//div[text()='Temp Client for reminder katalon']</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//div[text()='Temp Client for reminder katalon']<datalist><option>//div[text()='Temp Client katalon']</option><option>//div[text()='Temp Client for reminder katalon']</option></datalist></td><td>click on client</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='0546666666']<datalist><option>//span[text()='0546666666']</option></datalist></td><td>verify tel</td>
 </tr>
 <tr><td>click</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>click on delete button</td>
 </tr>
