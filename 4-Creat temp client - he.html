@@ -284,5 +284,39 @@
 <tr><td>verifyVisible</td><td>//span[text()='temp status']<datalist><option>//span[text()='temp status']</option></datalist></td><td></td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">go to temp client</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client katalon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='Temp Client katalon']<datalist><option>//div[text()='Temp Client katalon']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[text()='Temp Client katalon']<datalist><option>//div[text()='Temp Client katalon']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete temp client</td></tr>
+</thead>
+<tbody>
+<tr><td>waitForElementPresent</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>click</td><td>//button[text()='כן']<datalist><option>//button[text()='כן']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='modal-body']<datalist><option>//div[@class='modal-body']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[text()='מאגר לקוחות']<datalist><option>//div[text()='מאגר לקוחות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+</tbody></table>
 </body>
 </html>
