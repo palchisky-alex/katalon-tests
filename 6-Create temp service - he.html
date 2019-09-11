@@ -166,5 +166,69 @@
 <tr><td>verifyVisible</td><td>//img[@src="/public/services/delete-blue.svg"]<datalist><option>//img[@src="/public/services/delete-blue.svg"]</option></datalist></td><td></td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">go to temp service</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option><option>https://lista.atzma.im/he/catalog/services/categories</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test category selenium</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='Test טיפול services_createQueue']<datalist><option>//p[text()='Test טיפול services_createQueue']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete temp service</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='modal-body']<datalist><option>//div[@class='modal-body']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/trash.svg"]<datalist><option>//img[@src="/public/services/trash.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='בטוח רוצים למחוק את הטיפול?']<datalist><option>//span[text()='בטוח רוצים למחוק את הטיפול?']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='אשר']<datalist><option>//button[text()='אשר']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='לבטל']<datalist><option>//button[text()='לבטל']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/plus.svg"]<datalist><option>//img[@src="/public/services/plus.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/check.svg"]<datalist><option>//img[@src="/public/services/check.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='אשר']<datalist><option>//button[text()='לבטל']</option><option>//button[text()='אשר']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify service deletion</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services/categories</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test category selenium</td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//p[text()='Test טיפול services_createQueue']<datalist><option>//p[text()='Test טיפול services_createQueue']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
 </body>
 </html>
