@@ -147,8 +147,6 @@
 </tr>
 <tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/services/minus.svg"])[2]</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyVisible</td><td>//div[@style='background: rgb(239, 165, 254); border-color: rgb(239, 165, 254);']<datalist><option>//div[@style='background: rgb(239, 165, 254); border-color: rgb(239, 165, 254);']</option></datalist></td><td></td>
-</tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/services/check.svg"]<datalist><option>//img[@src="/public/services/check.svg"]</option></datalist></td><td></td>
 </tr>
 <tr><td>verifyVisible</td><td>//button[@class='bottom delete']<datalist><option>//button[@class='bottom delete']</option></datalist></td><td></td>
@@ -185,35 +183,41 @@
 <tr><td rowspan="1" colspan="3">delete temp service</td></tr>
 </thead>
 <tbody>
-<tr><td>verifyVisible</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td>verify checkbox</td>
 </tr>
-<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td>click on checkbox</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td>verify tresh appeared</td>
 </tr>
-<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td>click on checkbox</td>
 </tr>
-<tr><td>verifyElementNotPresent</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td></td>
+<tr><td>verifyElementNotPresent</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td>verify tresh closed</td>
 </tr>
-<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td></td>
+<tr><td>click</td><td>//label[@class='myCheckbox']<datalist><option>//label[@class='myCheckbox']</option></datalist></td><td>click on checkbox</td>
 </tr>
-<tr><td>click</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td></td>
+<tr><td>click</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td>click on tresh button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//div[@class='modal-body']<datalist><option>//div[@class='modal-body']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>xpath=(//div[@id='modal-content'])[3]<datalist><option>xpath=(//div[@id='modal-content'])[3]</option></datalist></td><td>delete message div appeared</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/services/trash.svg"]<datalist><option>//img[@src="/public/services/trash.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/trash.svg"])[3]<datalist><option>//img[@src="/public/services/trash.svg"]</option><option>xpath=(//img[@src="/public/services/trash.svg"])[3]</option></datalist></td><td>verify trash icon in message </td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='בטוח רוצים למחוק את הטיפול?']<datalist><option>//span[text()='בטוח רוצים למחוק את הטיפול?']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//span[text()='בטוח רוצים למחוק את הטיפול?']<datalist><option>//span[text()='בטוח רוצים למחוק את הטיפול?']</option></datalist></td><td>verify message</td>
 </tr>
-<tr><td>verifyVisible</td><td>//button[text()='אשר']<datalist><option>//button[text()='אשר']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>xpath=(//button[text()='אשר'])[3]<datalist><option>//button[text()='אשר']</option><option>xpath=(//button[text()='אשר'])[3]</option></datalist></td><td>verify "yes" button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//button[text()='לבטל']<datalist><option>//button[text()='לבטל']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>xpath=(//button[text()='לבטל'])[3]<datalist><option>//button[text()='לבטל']</option><option>xpath=(//button[text()='לבטל'])[3]</option></datalist></td><td>verify "no" button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/services/plus.svg"]<datalist><option>//img[@src="/public/services/plus.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/plus.svg"])[3]<datalist><option>//img[@src="/public/services/plus.svg"]</option><option>xpath=(//img[@src="/public/services/plus.svg"])[3]</option></datalist></td><td>verify plus icon</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/services/check.svg"]<datalist><option>//img[@src="/public/services/check.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/check.svg"])[3]<datalist><option>//img[@src="/public/services/check.svg"]</option><option>xpath=(//img[@src="/public/services/check.svg"])[3]</option></datalist></td><td>verify check icon</td>
 </tr>
-<tr><td>click</td><td>//button[text()='אשר']<datalist><option>//button[text()='לבטל']</option><option>//button[text()='אשר']</option></datalist></td><td></td>
+<tr><td>click</td><td>xpath=(//button[text()='לבטל'])[3]<datalist><option>//button[text()='לבטל']</option><option>//button[text()='אשר']</option><option>xpath=(//button[text()='לבטל'])[3]</option></datalist></td><td>click on "לבטל" button</td>
+</tr>
+<tr><td>waitForNotVisible</td><td>xpath=(//div[@id='modal-content'])[3]<datalist><option>xpath=(//div[@id='modal-content'])[3]</option></datalist></td><td>delete message div closed</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/services/delete.svg"]<datalist><option>//img[@src="/public/services/delete.svg"]</option></datalist></td><td>click on tresh button</td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[text()='אשר'])[3]<datalist><option>xpath=(//button[text()='אשר'])[3]</option><option>//button[text()='אשר']</option></datalist></td><td>click on "yes" button</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">

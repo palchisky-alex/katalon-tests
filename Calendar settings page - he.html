@@ -484,7 +484,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">treatment duration</td></tr>
+<tr><td rowspan="1" colspan="3">procedure duration</td></tr>
 </thead>
 <tbody>
 <tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify 10 min</td>
@@ -514,6 +514,80 @@
 <tr><td>click</td><td>//button[text()='Ok']<datalist><option>//button[text()='Ok']</option></datalist></td><td>click on error message - OK</td>
 </tr>
 <tr><td>waitForNotVisible</td><td>//div[@class='modal-body-warning']<datalist><option>//div[@class='modal-body-warning']</option></datalist></td><td>wait for error div will closed</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify all calendar settings</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
+</tr>
+<tr><td>refresh</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//p[text()='הגדרות יומן']<datalist><option>//p[text()='הגדרות יומן']</option></datalist></td><td>הגדרות יומן</td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/settings/calendar_settings_group<datalist><option>https://lista.atzma.im/he/settings/calendar_settings_group</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='history_back history_back_ltr']<datalist><option>//button[@class='history_back history_back_ltr']</option></datalist></td><td>back arrow</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h3[text()='הגדרות יומן']<datalist><option>//h3[text()='הגדרות יומן']</option><option>//h3[text()='הגדרות']</option></datalist></td><td>הגדרות יומן</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h4[text()='הגדרות כלליות']<datalist><option>//h4[text()='הגדרות כלליות']</option><option>//h3[text()='הגדרות יומן']</option><option>//h3[text()='הגדרות']</option></datalist></td><td>הגדרות כלליות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h4[text()='הגדרות תצוגת יומן']<datalist><option>//h4[text()='הגדרות תצוגת יומן']</option><option>//h3[text()='הגדרות יומן']</option><option>//h3[text()='הגדרות']</option></datalist></td><td>הגדרות תצוגת יומן</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h4[text()='הגדרות קביעת תורים']<datalist><option>//h4[text()='הגדרות קביעת תורים']</option><option>//h3[text()='הגדרות יומן']</option><option>//h3[text()='הגדרות']</option></datalist></td><td>הגדרות קביעת תורים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='תצוגת יומן']<datalist><option>//p[text()='תצוגת יומן']</option></datalist></td><td>תצוגת יומן</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='שבוע מתחיל ב:' ]<datalist><option>//p[text()='שבוע מתחיל ב:' ]</option></datalist></td><td>שבוע מתחיל ב:</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='יום מתחיל']<datalist><option>//p[text()='יום מתחיל']</option></datalist></td><td>יום מתחיל</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='יום מסתיים' ]<datalist><option>//p[text()='יום מסתיים' ]</option></datalist></td><td>יום מסתיים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='משך הסלוט']<datalist><option>//p[text()='משך הסלוט']</option></datalist></td><td>משך הסלוט</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='משך הסלוט']<datalist><option>//p[text()='משך הסלוט']</option></datalist></td><td>משך הסלוט</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='משך טיפול בררת מחדל']<datalist><option>//p[text()='משך טיפול בררת מחדל']</option></datalist></td><td>משך טיפול בררת מחדל</td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='האם לאפשר קביעת תורים מחוץ לסלוט']<datalist><option>//label[text()='האם לאפשר קביעת תורים מחוץ לסלוט']</option></datalist></td><td>האם לאפשר קביעת תורים מחוץ לסלוט</td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@id='scheduling_outside']<datalist><option>//input[@id='scheduling_outside']</option></datalist></td><td>checkbox</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[1]<datalist><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[1]</option></datalist></td><td>arrow_drop_down 1</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[2]</option></datalist></td><td>arrow_drop_down 2</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>arrow_drop_down 3</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 1</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 3</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 1</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[3]</option></datalist></td><td>minus 3</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='יומן יומי']<datalist><option>//p[text()='יומן יומי']</option></datalist></td><td>verify   תצוגת יומן</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='ראשון']<datalist><option>//p[text()='ראשון']</option></datalist></td><td>verify שבוע מתחיל </td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='09:00']<datalist><option>//span[text()='09:00']</option></datalist></td><td>verify יום מתחיל</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='09:00']</option><option>//span[text()='23:00']</option></datalist></td><td>verify יום מסתיים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>משך הסלוט</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify 'משך טיפול בררת מחדל'</td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@checked='']<datalist><option>//input[@checked='']</option></datalist></td><td>verify "האם לאפשר קביעת תורים מחוץ לסלוט" - checked</td>
 </tr>
 </tbody></table>
 </body>

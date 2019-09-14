@@ -119,12 +119,6 @@
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='Aqua Plants']<datalist><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[text()='Aqua Plants']</option></datalist></td><td>verify new company name</td>
 </tr>
-<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
-</tr>
-<tr><td>verifyVisible</td><td>//h3[text()='Aqua Plants']<datalist><option>//h3[text()='Aqua Plants']</option></datalist></td><td>check new company name on main page</td>
-</tr>
-<tr><td>click</td><td>//p[text()='הגדרות עסק']<datalist><option>//p[text()='הגדרות עסק']</option></datalist></td><td>click on הגדרות עסק</td>
-</tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
@@ -302,6 +296,20 @@
 <tr><td>verifyVisible</td><td>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']<datalist><option>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']</option></datalist></td><td>verify new about text</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='תודה רבה לקוחות!!!']<datalist><option>//p[text()='תודה רבה לקוחות!!!']</option></datalist></td><td>verify new message for client</td>
+</tr>
+<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//h3[text()='Aqua Plants']<datalist><option>//h3[text()='Aqua Plants']</option></datalist></td><td>check new company name on main page</td>
+</tr>
+<tr><td>click</td><td>//button[@class='menu']<datalist><option>//button[@class='menu']</option></datalist></td><td>click on menu</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@id='menu_modal']<datalist><option>//div[@id='menu_modal']</option></datalist></td><td>verify Visible menu div</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='Aqua Plants']<datalist><option>//p[text()='Aqua Plants']</option></datalist></td><td>verify company name in menu</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='תל אביב, דיזנגוף 100, ישראל']<datalist><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option></datalist></td><td>verify address in menu</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='logo']/img<datalist><option>//div[@class='logo']/img</option></datalist></td><td>verify company logo in menu</td>
 </tr>
 </tbody></table>
 </body>
