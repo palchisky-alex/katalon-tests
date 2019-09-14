@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Menu verify - he</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">open site</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/calendar/<datalist><option>${Lista}</option><option>https://atzma.im/he/home</option><option>Lista</option><option></option><option>https://lista.atzma.im/he/home</option><option>https://lista.atzma.im/he/calendar/</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify link text</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='modal-wrap']<datalist><option>//div[@class='modal-wrap']</option></datalist></td><td>menu div</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[@class='business_name']<datalist><option>//p[@class='business_name']</option></datalist></td><td>company name</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[@class='business_address']<datalist><option>//p[@class='business_address']</option></datalist></td><td>address</td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a[@href="/he/calendar"]<datalist><option>//a[@href="/he/calendar"]</option></datalist></td><td>יומן</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/clients"]<datalist><option>//a[@href="/he/clients"]</option></datalist></td><td>מעגר לקוחות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/reminders"]<datalist><option>//a[@href="/he/reminders"]</option></datalist></td><td>תזכורת</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/groups"]<datalist><option>//a[@href="/he/groups"]</option></datalist></td><td>קבוצות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/catalog/services"]<datalist><option>//a[@href="/he/catalog/services"]</option></datalist></td><td>טיפולים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/settings"]<datalist><option>//a[@href="/he/settings"]</option></datalist></td><td>הגדרות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="mailto:doc999tor@gmail.com?subject=let%20us%20help%20you"]<datalist><option>//a[@href="mailto:doc999tor@gmail.com?subject=let%20us%20help%20you"]</option></datalist></td><td>תמיכה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="mailto:doc999tor@gmail.com?subject=let%20us%20help%20you"]<datalist><option>//a[@href="mailto:doc999tor@gmail.com?subject=let%20us%20help%20you"]</option></datalist></td><td>Rate us</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/logout"]<datalist><option>//a[@href="/he/logout"]</option></datalist></td><td>לצאת</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify icons</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//img[@class='business_logo']<datalist><option>//img[@class='business_logo']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt="calendar"]<datalist><option>//img[@alt="calendar"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt='clients_list']<datalist><option>//img[@alt='clients_list']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt='reminders']<datalist><option>//img[@alt='reminders']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt="groups"]<datalist><option>//img[@alt="groups"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt="services"]<datalist><option>//img[@alt="services"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt="settings"]<datalist><option>//img[@alt="settings"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt="support"]<datalist><option>//img[@alt="support"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt="rate_us"]<datalist><option>//img[@alt="rate_us"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@alt="logout"]<datalist><option>//img[@alt="logout"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[@class='modal-wrap']<datalist><option>//div[@class='modal-wrap']</option></datalist></td><td>menu div</td>
+</tr>
+</tbody></table>
+</body>
+</html>

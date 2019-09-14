@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Reminder page verify - he</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">add client without tel</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option><option>https://atzma.im/he/clients</option></datalist></td><td>open clients page</td>
+</tr>
+<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option><option>https://atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//*[@class='floating-button standartLeft']<datalist><option>//*[@class='floating-button standartLeft']</option><option>//div[@class='more_wrap']</option><option>//span[text()='יום']</option><option>//img[@class='arrow-back']</option></datalist></td><td>btn add new client </td>
+</tr>
+<tr><td>click</td><td>//*[@class='floating-button standartLeft']<datalist><option>//*[@class='floating-button standartLeft']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הוסף לקוח חדש'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='[&amp;#34;4565456&amp;#34;]'])[1]/following::div[3]</option><option>//div[@id='root']/div/div[4]</option><option>//div[4]</option><option>css=div.floating-button.standartLeft</option></datalist></td><td>press btn - add new client</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזן שם של לקוח"]<datalist><option>//input[@placeholder="הזן שם של לקוח"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזן אימייל של לקוח"]<datalist><option>//input[@placeholder="הזן אימייל של לקוח"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>temp@gmail.com</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזן כתובת של לקוח"]<datalist><option>//input[@placeholder="הזן כתובת של לקוח"]</option><option>//input[@placeholder="הזן אימייל של לקוח"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>רוקח 18, רמת גן, ישראל</td>
+</tr>
+<tr><td>select</td><td>//select[1]<datalist><option>//select[1]</option><option>//select[3]</option><option>//select[2]</option></datalist></td><td>value=1950</td>
+</tr>
+<tr><td>select</td><td>//select[2]<datalist><option>//select[2]</option><option>//select[3]</option><option>//option</option></datalist></td><td>value=10</td>
+</tr>
+<tr><td>select</td><td>//select[3]<datalist><option>//select[3]</option></datalist></td><td>value=10</td>
+</tr>
+<tr><td>click</td><td>//input[@value='male']<datalist><option>//input[@value='male']</option></datalist></td><td>male</td>
+</tr>
+<tr><td>click</td><td>//label[text()='להסיף הערה חדשה']<datalist><option>//label[text()='להסיף הערה חדשה']</option></datalist></td><td>add note</td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td>הערות של לקוח זמני</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()="להוסיף חוב חדש"]<datalist><option>//span[text()="להוסיף חוב חדש"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[@src='/public/adding-client/plus.svg']<datalist><option>//img[@src='/public/adding-client/plus.svg']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="תיאור חוב"]<datalist><option>//input[@placeholder="תיאור חוב"]</option></datalist></td><td>חוב  של לקוח זמני</td>
+</tr>
+<tr><td>click</td><td>//div[@id='debts']//p[text()='שמור']<datalist><option>//div[@id='debts']//p[text()='שמור']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[text()='שמור'])[2]<datalist><option>xpath=(//span[text()='שמור'])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
+</tr>
+<tr><td>click</td><td>//p[text()='דלג']<datalist><option>//p[text()='שמור']</option><option>//p[text()='דלג']</option></datalist></td><td>save message</td>
+</tr>
+<tr><td>waitForVisible</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//span[text()='temp status']<datalist><option>//span[text()='temp status']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/clients-details/pencil.svg"]<datalist><option>//img[@src="/public/clients-details/pencil.svg"]</option><option>//span[text()='להוסיף סטטוס']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//textarea[@placeholder="להוסיף סטטוס"]<datalist><option>//textarea[@placeholder="להוסיף סטטוס"]</option></datalist></td><td>temp status</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/clients-details/check-circle-status.svg"]<datalist><option>//img[@src="/public/clients-details/check-circle-status.svg"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">go to reminders page</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/reminders<datalist><option>//a[@href="/he/reminders"]</option><option>https://lista.atzma.im/he/reminders</option></datalist></td><td>תזכורת</td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify reminders elements</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/back.svg"]<datalist><option>//img[@src="/public/reminders/back.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='תזכורות']<datalist><option>//p[text()='תזכורות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/right-but.svg"]<datalist><option>//img[@src="/public/reminders/right-but.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]<datalist><option>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/magnifier.svg"]<datalist><option>//img[@src="/public/reminders/magnifier.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='הכל']<datalist><option>//p[text()='הכל']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='לא טופל']<datalist><option>//p[text()='לא טופל']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='תזכורות שלי']<datalist><option>//p[text()='תזכורות שלי']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[@class='my-btn']<datalist><option>//p[@class='my-btn']</option></datalist></td><td>number  תזכורת שלי</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[@class='unread-btn']<datalist><option>//p[@class='unread-btn']</option></datalist></td><td>number  לא טופל</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[@class='all-btn']<datalist><option>//p[@class='all-btn']</option></datalist></td><td>number  הכל</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@id='reminders']<datalist><option>//div[@class='swiper-container swiper-container-horizontal']</option><option>//div[@id='reminders']</option></datalist></td><td>containers</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option></datalist></td><td>button add</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify add reminder page</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option></datalist></td><td>button add</td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//div[@class='hidden']<datalist><option>//div[@class='hidden']</option></datalist></td><td>hidden list present in html</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='header-create']/button[text()='בטל']<datalist><option>//div[@class='header-create']/button[text()='בטל']</option></datalist></td><td>בטל</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='header-create']/button[text()='לשמור']<datalist><option>//div[@class='header-create']/button[text()='לשמור']</option></datalist></td><td>לשמור</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h1[text()='תזכורות חדשה']<datalist><option>//h1[text()='תזכורות חדשה']</option></datalist></td><td>תזכורות חדשה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/rem-text.svg"]<datalist><option>//img[@src="/public/reminders/rem-text.svg"]</option></datalist></td><td>icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/user-def.svg"]<datalist><option>//img[@src="/public/reminders/user-def.svg"]</option></datalist></td><td>icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/time-substract.svg"]<datalist><option>//img[@src="/public/reminders/time-substract.svg"]</option></datalist></td><td>minus</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/time-add.svg"]<datalist><option>//img[@src="/public/reminders/time-add.svg"]</option></datalist></td><td>plus</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[@class='icon']<datalist><option>//span[@class='icon']</option></datalist></td><td>arrow</td>
+</tr>
+<tr><td>verifyEditable</td><td>id=textarea-create<datalist><option>//textarea[@placeholder="מה תרצה שנזכיר לך?"]</option><option>id=textarea-create</option></datalist></td><td>מה תרצה שנזכיר לך</td>
+</tr>
+<tr><td>verifyVisible</td><td>id=textarea-create<datalist><option>//textarea[@placeholder="מה תרצה שנזכיר לך?"]</option><option>id=textarea-create</option></datalist></td><td>מה תרצה שנזכיר לך</td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@placeholder="על איזה לקוח?"]<datalist><option>//input[@placeholder="על איזה לקוח?"]</option></datalist></td><td>על איזה לקוח</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='למתי:']<datalist><option>//p[text()='למתי:']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@value='1']<datalist><option>//input[@value='1']</option></datalist></td><td>1</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='active']/div[text()='ימים']<datalist><option>//div[@class='active']/div[text()='ימים']</option></datalist></td><td>ימים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='תאריך ושעה:']<datalist><option>//p[text()='תאריך ושעה:']</option></datalist></td><td>תאריך ושעה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='new-time-value']<datalist><option>//div[@class='new-time-value']</option></datalist></td><td>time</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='new-reminder-btn']/button[text()='לשמור']<datalist><option>//div[@class='new-reminder-btn']/button[text()='לשמור']</option></datalist></td><td>לשמור'</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='new-reminder-btn']/button[text()='בטל']<datalist><option>//div[@class='new-reminder-btn']/button[text()='בטל']</option></datalist></td><td>בטל'</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/reminders/user-def.svg"]<datalist><option>//input[@placeholder="על איזה לקוח?"]</option><option>//img[@src="/public/reminders/user-def.svg"]</option></datalist></td><td>open popap</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='chose-client-wrap']<datalist><option>//div[@class='chose-client-wrap']</option></datalist></td><td>verify popup Visible </td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/white-plus.svg"]<datalist><option>//img[@src="/public/reminders/white-plus.svg"]</option></datalist></td><td>close button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h2[text()='בחר לקוח']<datalist><option>//h2[text()='בחר לקוח']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>verifyEditable</td><td>//div[@class='search-wrap']/input[@placeholder="על איזה לקוח?"]<datalist><option>//div[@class='search-wrap']/input[@placeholder="על איזה לקוח?"]</option></datalist></td><td>verify input Editable</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/reminders/magnifier.svg"])[2]<datalist><option>(//img[@src="/public/reminders/magnifier.svg"])[2]</option><option>xpath=(//img[@src="/public/reminders/magnifier.svg"])[2]</option></datalist></td><td>magnifier</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='על איזה לקוח?']<datalist><option>//p[text()='על איזה לקוח?']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/reminders/user-def.svg"]<datalist><option>//input[@placeholder="על איזה לקוח?"]</option><option>//img[@src="/public/reminders/user-def.svg"]</option></datalist></td><td>close popap</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[@class='chose-client-wrap']<datalist><option>//div[@class='chose-client-wrap']</option></datalist></td><td>verify popup NOT Visible </td>
+</tr>
+<tr><td>click</td><td>//div[@class='new-reminder-btn']/button[text()='לשמור']<datalist><option>//div[@class='new-reminder-btn']/button[text()='לשמור']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">add new reminder</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option></datalist></td><td>button add</td>
+</tr>
+<tr><td>click</td><td>id=textarea-create<datalist><option>id=textarea-create</option><option>name=text</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לשמור'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תזכורות חדשה'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ימים'])[1]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='▼'])[1]/preceding::textarea[1]</option><option>//textarea[@id='textarea-create']</option><option>//div[@id='create-modal']/div/div[2]/div/textarea</option><option>//textarea</option><option>css=#textarea-create</option><option>מה תרצה שנזכיר לך</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=textarea-create<datalist><option>id=textarea-create</option><option>name=text</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לשמור'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תזכורות חדשה'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ימים'])[1]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='▼'])[1]/preceding::textarea[1]</option><option>//textarea[@id='textarea-create']</option><option>//div[@id='create-modal']/div/div[2]/div/textarea</option><option>//textarea</option><option>css=#textarea-create</option></datalist></td><td>תזכורת ללקוח מזדמן katalon !?%* 10</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/reminders/user-def.svg"]<datalist><option>//img[@src="/public/reminders/user-def.svg"]</option></datalist></td><td>add client</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="על איזה לקוח?"]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='בחר לקוח'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='היה לפני שנתיים'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='בטל'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תזכורות חדשה'])[1]/preceding::input[1]</option><option>xpath=(//input[@value=''])[2]</option><option>//div[@id='chose-client']/div/header/div/div/input</option><option>//header/div/div/input</option><option>css=header.chose-client-header &gt; div.search-strip &gt; div.search-wrap &gt; input.search-input</option><option>//input[@placeholder="על איזה לקוח?"]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='Temp Client for reminder katalon']<datalist><option>//p[text()='Temp Client katalon']</option><option>//p[text()='Temp Client for reminder katalon']</option></datalist></td><td>check temp client visible</td>
+</tr>
+<tr><td>click</td><td>//p[text()='Temp Client for reminder katalon']<datalist><option>//p[text()='Temp Client katalon']</option><option>//p[text()='Temp Client for reminder katalon']</option></datalist></td><td>add client</td>
+</tr>
+<tr><td>verifyValue</td><td>//input[@placeholder="על איזה לקוח?"]<datalist><option>//input[@placeholder="על איזה לקוח?"]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/reminders/time-add.svg"]<datalist><option>//input[@value='1']</option><option>//img[@src="/public/reminders/time-add.svg"]</option></datalist></td><td>click on plus</td>
+</tr>
+<tr><td>click</td><td>//span[@class='icon']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('תזכורת ללקוח מזדמן katalon !?%* 10 ', '"', '', '"', '')])[1]/following::div[11]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לשמור'])[1]/following::div[14]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='▼'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ימים'])[2]/preceding::div[1]</option><option>//div[@id='select-main']/div/div</option><option>//div[3]/div/div[3]/div/div</option><option>css=div.active-name</option><option>//span[@class='icon']</option></datalist></td><td>click on arrow</td>
+</tr>
+<tr><td>click</td><td>//div[text()='שעות']<datalist><option>//div[text()='שעות']</option></datalist></td><td>click on hours</td>
+</tr>
+<tr><td>click</td><td>//div[@class='new-reminder-btn']/button[text()='לשמור']<datalist><option>//div[@class='new-reminder-btn']/button[text()='לשמור']</option></datalist></td><td>save reminder</td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify created reminder in search</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]<datalist><option>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/default.jpg"]<datalist><option>//img[@src="/public/clients-details/default.jpg"]</option></datalist></td><td>default icon  in search</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='Temp Client for reminder katalon']<datalist><option>//span[text()='Temp Client katalon']</option><option>//span[text()='Temp Client for reminder katalon']</option></datalist></td><td>client name in search</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10']<datalist><option>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10 ""']</option><option>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10]</option><option>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10']</option></datalist></td><td>reminder text in search</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/bell.svg"]<datalist><option>//img[@src="/public/reminders/bell.svg"]</option></datalist></td><td>check bell icon in search</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify reminder content</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//span[text()='Temp Client for reminder katalon']<datalist><option>//span[text()='Temp Client for reminder katalon']</option><option>//span[text()='Temp Client katalon']</option></datalist></td><td>click on name</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='btn-back back-rtl']<datalist><option>//div[@class='btn-back back-rtl']</option></datalist></td><td>back arrow</td>
+</tr>
+<tr><td>verifyVisible</td><td>//figcaption[text()='Temp Client for reminder katalon']<datalist><option>//figcaption[text()='Temp Client for reminder katalon']</option></datalist></td><td>client name</td>
+</tr>
+<tr><td>verifyVisible</td><td>//figure//img[@src="/public/clients-details/default.jpg"]<datalist><option>//figure//img[@src="/public/clients-details/default.jpg"]</option></datalist></td><td>client default  icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/delete-white.svg"]<datalist><option>//img[@src="/public/reminders/delete-white.svg"]</option></datalist></td><td>trash icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='מחק']<datalist><option>//p[text()='מחק']</option></datalist></td><td>delete text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='ללקוח הזה אין מספר טלפון']<datalist><option>//p[text()='ללקוח הזה אין מספר טלפון']</option></datalist></td><td>notification text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='תרצו להוסיף אותו?']<datalist><option>//span[text()='תרצו להוסיף אותו?']</option></datalist></td><td>notification text</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@src="/public/reminders/call-phone.svg"]<datalist><option>//img[@src="/public/reminders/call-phone.svg"]</option></datalist></td><td>call icon</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@src="/public/reminders/send-sms.svg"]<datalist><option>//img[@src="/public/reminders/send-sms.svg"]</option></datalist></td><td>sms icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/rem-text.svg"]<datalist><option>//img[@src="/public/reminders/rem-text.svg"]</option></datalist></td><td>reminder icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/user-def.svg"]<datalist><option>//img[@src="/public/reminders/user-def.svg"]</option></datalist></td><td>user icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/view-bell.svg"]<datalist><option>//img[@src="/public/reminders/view-bell.svg"]</option></datalist></td><td>bell icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/reminders/edit.svg"])[1]<datalist><option>xpath=(//img[@src="/public/reminders/edit.svg"])[1]</option></datalist></td><td>1 edit pen icon </td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/reminders/edit.svg"])[2]<datalist><option>xpath=(//img[@src="/public/reminders/edit.svg"])[2]</option></datalist></td><td>2 edit pen icon </td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/reload.svg"]<datalist><option>//img[@src="/public/reminders/reload.svg"]</option></datalist></td><td>reload icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@id='edit-modal']//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10']<datalist><option>//div[@id='edit-modal']//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10']</option></datalist></td><td>reminder text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='Temp Client for reminder katalon']<datalist><option>//p[text()='Temp Client for reminder katalon']</option></datalist></td><td>client name</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='date-strip-text']<datalist><option>//div[@class='date-strip-text']</option></datalist></td><td>time strip</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//p[text()='התקשר']<datalist><option>//p[text()='התקשר']</option></datalist></td><td>call text</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//p[text()='שלח SMS']<datalist><option>//p[text()='שלח SMS']</option></datalist></td><td>sms text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='common close-btn']<datalist><option>//div[@class='common close-btn']</option></datalist></td><td>close button</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">add tel to client</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//span[text()='תרצו להוסיף אותו?']<datalist><option>//span[text()='תרצו להוסיף אותו?']</option></datalist></td><td>notification text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>add tel notification</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/btn-not.svg"]<datalist><option>//img[@src="/public/reminders/btn-not.svg"]</option></datalist></td><td>close button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/phone-off.svg"]<datalist><option>//img[@src="/public/reminders/phone-off.svg"]</option></datalist></td><td>phone icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/skip-forward.svg"]<datalist><option>//img[@src="/public/reminders/skip-forward.svg"]</option></datalist></td><td>forward icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/save.svg"]<datalist><option>//img[@src="/public/reminders/save.svg"]</option></datalist></td><td>save button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='btns-wrap']/p[text()='לדלג']<datalist><option>//div[@class='btns-wrap']/p[text()='סגור']</option><option>//div[@class='btns-wrap']/p[text()='לדלג']</option></datalist></td><td>לדלג</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@type='tel']<datalist><option>//input[@type='tel']</option></datalist></td><td>tel input editable</td>
+</tr>
+<tr><td>type</td><td>//input[@type='tel']<datalist><option>//input[@type='tel']</option></datalist></td><td>0546666666</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/trueValid.svg"]<datalist><option>//img[@src="/public/reminders/trueValid.svg"]</option></datalist></td><td>valid tel icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@value='0546666666']<datalist><option>//input[@value='0546666666']</option></datalist></td><td>add tel validation</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/reminders/save.svg"]<datalist><option>//img[@src="/public/reminders/save.svg"]</option></datalist></td><td>save tel</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/reminders/btn-not.svg"]<datalist><option>//img[@src="/public/reminders/btn-not.svg"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify new reminder elements</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/call-phone.svg"]<datalist><option>//img[@src="/public/reminders/call-phone.svg"]</option></datalist></td><td>call icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/send-sms.svg"]<datalist><option>//img[@src="/public/reminders/send-sms.svg"]</option></datalist></td><td>sms icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='התקשר']<datalist><option>//p[text()='התקשר']</option></datalist></td><td>call text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='שלח SMS']<datalist><option>//p[text()='שלח SMS']</option></datalist></td><td>sms text</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete reminder</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option><option>//a[@href="/he/reminders"]</option></datalist></td><td>תזכורת</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]<datalist><option>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>click</td><td>//span[text()='Temp Client for reminder katalon']<datalist><option>//span[text()='Temp Client for reminder katalon']</option><option>//span[text()='Temp Client katalon']</option></datalist></td><td>click on name</td>
+</tr>
+<tr><td>click</td><td>//p[text()='מחק']<datalist><option>//p[text()='מחק']</option></datalist></td><td>click on delete</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>deletion window</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/reminders/trash.svg"])[3]<datalist><option>xpath=(//img[@src="/public/reminders/trash.svg"])[3]</option></datalist></td><td>trash icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/reminders/close.svg"])[3]<datalist><option>xpath=(//img[@src="/public/reminders/close.svg"])[3]</option></datalist></td><td>close icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/reminders/confirm.svg"])[3]<datalist><option>xpath=(//img[@src="/public/reminders/confirm.svg"])[3]</option></datalist></td><td>confirm icon</td>
+</tr>
+<tr><td>verifyText</td><td>xpath=(//span)[3]<datalist><option>xpath=(//span)[3]</option></datalist></td><td>אתה בטוח רוצה למחוק את התזכורת הזו?</td>
+</tr>
+<tr><td>click</td><td>xpath=(//button)[5]<datalist><option>xpath=(//img[@src="/public/reminders/close.svg"])[3]</option><option>xpath=(//button[text()='בטל'])[3]</option><option>xpath=(//button)[5]</option></datalist></td><td>close window</td>
+</tr>
+<tr><td>waitForVisible</td><td>//p[text()='מחק']<datalist><option>//p[text()='מחק']</option></datalist></td><td>wait for element</td>
+</tr>
+<tr><td>click</td><td>//p[text()='מחק']<datalist><option>//p[text()='מחק']</option></datalist></td><td>click on delete</td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[text()='מחק'])[3]<datalist><option>xpath=(//img[@src="/public/reminders/confirm.svg"])[3]</option><option>xpath=(//button[text()='מחק'])[3]</option></datalist></td><td>delete reminder</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify reminder deletion</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyNotVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>deletion NotVisible window</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//span[text()='Temp Client for reminder katalon']<datalist><option>//span[text()='Temp Client for reminder katalon']</option><option>//span[text()='Temp Client katalon']</option></datalist></td><td>client name in search</td>
+</tr>
+<tr><td>open</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]<datalist><option>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@src="/public/clients-details/default.jpg"]<datalist><option>//img[@src="/public/clients-details/default.jpg"]</option></datalist></td><td>default icon  in search</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//span[text()='Temp Client for reminder katalon']<datalist><option>//span[text()='Temp Client for reminder katalon']</option><option>//span[text()='Temp Client katalon']</option></datalist></td><td>client name in search</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10']<datalist><option>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10']</option><option>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10 ""']</option><option>//p[text()='תזכורת ללקוח מזדמן katalon !?%* 10]</option></datalist></td><td>reminder text in search</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@src="/public/reminders/bell.svg"]<datalist><option>//img[@src="/public/reminders/bell.svg"]</option></datalist></td><td>check bell icon in search</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete temp client</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>//span[text()='Temp Client for reminder katalon']</option><option>//span[text()='Temp Client katalon']</option><option>https://lista.atzma.im/he/clients</option></datalist></td><td>open client page</td>
+</tr>
+<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option><option>https://atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[text()='Temp Client for reminder katalon']<datalist><option>//div[text()='Temp Client katalon']</option><option>//div[text()='Temp Client for reminder katalon']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[text()='Temp Client for reminder katalon']<datalist><option>//div[text()='Temp Client katalon']</option><option>//div[text()='Temp Client for reminder katalon']</option></datalist></td><td>click on client</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='0546666666']<datalist><option>//span[text()='0546666666']</option></datalist></td><td>verify tel</td>
+</tr>
+<tr><td>click</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>click on delete button</td>
+</tr>
+<tr><td>click</td><td>//button[text()='כן']<datalist><option>//button[text()='כן']</option></datalist></td><td>confirm deleton</td>
+</tr>
+<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify client deletion</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client for reminder katalon</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[text()='Temp Client for reminder katalon']<datalist><option>//div[text()='Temp Client for reminder katalon']</option></datalist></td><td>verify client Not Visible</td>
+</tr>
+</tbody></table>
+</body>
+</html>

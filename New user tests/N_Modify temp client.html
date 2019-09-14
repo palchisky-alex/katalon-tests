@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>5-Modify temp client</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">add temp client</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option><option>https://atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option><option>https://atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//*[@class='floating-button standartLeft']<datalist><option>//*[@class='floating-button standartLeft']</option><option>//div[@class='more_wrap']</option><option>//span[text()='יום']</option><option>//img[@class='arrow-back']</option></datalist></td><td>btn add new client </td>
+</tr>
+<tr><td>click</td><td>//*[@class='floating-button standartLeft']<datalist><option>//*[@class='floating-button standartLeft']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הוסף לקוח חדש'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='[&amp;#34;4565456&amp;#34;]'])[1]/following::div[3]</option><option>//div[@id='root']/div/div[4]</option><option>//div[4]</option><option>css=div.floating-button.standartLeft</option></datalist></td><td>press btn - add new client</td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הזן שם של לקוח"]<datalist><option>//input[@placeholder="הזן שם של לקוח"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזן שם של לקוח"]<datalist><option>//input[@placeholder="הזן שם של לקוח"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>Temp Client katalon</td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הכנס מספר טלפון"]<datalist><option>//input[@placeholder="הכנס מספר טלפון"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הכנס מספר טלפון"]<datalist><option>//input[@placeholder="הכנס מספר טלפון"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>0547019283</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזן אימייל של לקוח"]<datalist><option>//input[@placeholder="הזן אימייל של לקוח"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>temp@gmail.com</td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזן כתובת של לקוח"]<datalist><option>//input[@placeholder="הזן כתובת של לקוח"]</option><option>//input[@placeholder="הזן אימייל של לקוח"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>רוקח 18, רמת גן, ישראל</td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הכנס מספר טלפון"]<datalist><option>//input[@placeholder="הכנס מספר טלפון"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='פתח את כל השדות'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להסיף הערה חדשה'])[1]/following::button[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='בטוח רוצים למחוק את הלקוח?'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לא'])[1]/preceding::button[1]</option><option>//div[@id='delete-customer']/div/button</option><option>//div[8]/div/button</option><option>css=div.del-btn &gt; button</option></datalist></td><td>הזן כתובת של לקוח</td>
+</tr>
+<tr><td>select</td><td>//select[1]<datalist><option>//select[1]</option><option>//select[3]</option><option>//select[2]</option></datalist></td><td>value=1950</td>
+</tr>
+<tr><td>select</td><td>//select[2]<datalist><option>//select[2]</option><option>//select[3]</option><option>//option</option></datalist></td><td>value=10</td>
+</tr>
+<tr><td>select</td><td>//select[3]<datalist><option>//select[3]</option></datalist></td><td>value=10</td>
+</tr>
+<tr><td>click</td><td>//input[@value='male']<datalist><option>//input[@value='male']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//label[text()='להסיף הערה חדשה']<datalist><option>//label[text()='להסיף הערה חדשה']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td>הערות של לקוח זמני</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()="להוסיף חוב חדש"]<datalist><option>//span[text()="להוסיף חוב חדש"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[@src='/public/adding-client/plus.svg']<datalist><option>//img[@src='/public/adding-client/plus.svg']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="תיאור חוב"]<datalist><option>//input[@placeholder="תיאור חוב"]</option></datalist></td><td>חוב  של לקוח זמני</td>
+</tr>
+<tr><td>click</td><td>//div[@id='debts']//p[text()='שמור']<datalist><option>//div[@id='debts']//p[text()='שמור']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[text()='שמור'])[2]<datalist><option>xpath=(//span[text()='שמור'])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
+</tr>
+<tr><td>click</td><td>//p[text()='שמור']<datalist><option>//p[text()='שמור']</option></datalist></td><td>save message</td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h1[text()='Temp Client katalon']<datalist><option>//h1[text()='Temp Client katalon']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//h1[text()='Temp Client katalon']<datalist><option>//h1[text()='Temp Client katalon']</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option><option>//div[@class='client-name']/h1</option><option>//h1[text()='Temp Client']</option></datalist></td><td>Temp Client katalon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='בן 68 שנים']<datalist><option>//span[text()='בן 68 שנים']</option><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option></datalist></td><td>בן 68 שנים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='Temp Client katalon']<datalist><option>//span[text()='Temp Client katalon']</option><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option><option>//span[text()='Temp Client']</option></datalist></td><td>Temp Client katalon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='רוקח 18, רמת גן, ישראל']<datalist><option>//div[text()='רוקח 18, רמת גן, ישראל']</option><option>//div[text()='רמת גן, רוקח 18']</option></datalist></td><td>רוקח 18, רמת גן, ישראל</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='ז']<datalist><option>//span[text()='ז']</option><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option></datalist></td><td>ז</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='1950-11-10']<datalist><option>//span[text()='1950-11-10']</option><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option><option>//span[text()='1950-12-10']</option></datalist></td><td>1950-11-10</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='header-text']<datalist><option>//div[@class='header-text']</option><option>//span[text()='$']</option></datalist></td><td>חובות$10</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='debt-list-name']<datalist><option>//div[@class='debt-list-name']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sdcsdc'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='$'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להוסיף חוב חדש'])[1]/preceding::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הערות'])[2]/preceding::img[2]</option><option>//div[@id='debts']/div[2]/div/div[2]/img</option><option>//div[2]/div/div[2]/img</option><option>css=div.right-side &gt; img</option></datalist></td><td>10$חוב של לקוח זמני</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/ic_menu.svg"]<datalist><option>//img[@src="/public/clients-details/ic_menu.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/arrow-back.svg"]<datalist><option>//img[@src="/public/clients-details/arrow-back.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='VIP']<datalist><option>//span[text()='VIP']</option></datalist></td><td>VIP</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/ic_photo.svg"]<datalist><option>//img[@src="/public/clients-details/ic_photo.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//form<datalist><option>//form</option></datalist></td><td>סטטוסלהוסיף סטטוס</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/pencil.svg"]<datalist><option>//img[@src="/public/clients-details/pencil.svg"]</option></datalist></td><td>pen</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='חובות']<datalist><option>//span[text()='חובות']</option></datalist></td><td>חובות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הוסף קובץ חדש לגלריה']<datalist><option>//span[text()='הוסף קובץ חדש לגלריה']</option></datalist></td><td>הוסף קובץ חדש לגלריה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הערות']<datalist><option>//span[text()='הערות']</option></datalist></td><td>הערות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הוסף מנוי חדש']<datalist><option>//span[text()='הוסף מנוי חדש']</option><option>//span[text()='הוסף	מנוי חדש']</option></datalist></td><td>הוסף מנוי חדש</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='קבע תור ראשון']<datalist><option>//span[text()='קבע תור ראשון']</option></datalist></td><td>קבע תור ראשון</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='היסטוריה']<datalist><option>//span[text()='היסטוריה']</option><option>//span[text()='קבע תור ראשון']</option></datalist></td><td>היסטוריה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='ערוך']<datalist><option>//button[text()='ערוך']</option></datalist></td><td>ערוך</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/edit-note.svg"]<datalist><option>//img[@src="/public/clients-details/edit-note.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//h2[text()='פרטים אישיים']<datalist><option>//h2[text()='פרטים אישיים']</option></datalist></td><td>פרטים אישיים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='שם לקוח']<datalist><option>//span[text()='שם לקוח']</option></datalist></td><td>שם לקוח</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='טלפון']<datalist><option>//span[text()='טלפון']</option></datalist></td><td>טלפון</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/send-sms.svg"]<datalist><option>//img[@src="/public/clients-details/send-sms.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="sms:0547019283"]<datalist><option>//a[@href="sms:0547019283"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/call.svg"]<datalist><option>//img[@src="/public/clients-details/call.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="tel:0547019283"]<datalist><option>//a[@href="tel:0547019283"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src='/public/clients-details/ic_email.svg']<datalist><option>//img[@src='/public/clients-details/ic_email.svg']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="mailto:temp@gmail.com"]<datalist><option>//a[@href="mailto:temp@gmail.com"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/icon-address.png"]<datalist><option>//img[@src="/public/clients-details/icon-address.png"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="https://www.google.com/maps/place/רוקח 18, רמת גן, ישראל"]<datalist><option>//a[@href="https://www.google.com/maps/place/רוקח 18, רמת גן, ישראל"]</option><option>//a[@href="https://www.google.com/maps/place/רמת גן, רוקח 18"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/waze.png"]<datalist><option>//img[@src="/public/clients-details/waze.png"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="https://waze.com/ul?q=רוקח 18, רמת גן, ישראל"]<datalist><option>//a[@href="https://waze.com/ul?q=רוקח 18, רמת גן, ישראל"]</option><option>//a[@href="https://waze.com/ul?q=רמת גן, רוקח 18"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='מין']<datalist><option>//span[text()='מין']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='יום הולדת']<datalist><option>//span[text()='יום הולדת']</option></datalist></td><td>יום הולדת</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הלקוח אישר קבלת תוכן פרסומי']<datalist><option>//span[text()='הלקוח אישר קבלת תוכן פרסומי']</option></datalist></td><td>הלקוח אישר קבלת תוכן פרסומי</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[@class='debt-list-date rtl-side']<datalist><option>//span[@class='debt-list-date rtl-side']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='להוסיף חוב חדש']<datalist><option>//span[text()='להוסיף חוב חדש']</option></datalist></td><td>להוסיף חוב חדש</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[@class='notes-list-date']<datalist><option>//span[@class='notes-list-date']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='להסיף הערה חדשה']<datalist><option>//label[text()='להסיף הערה חדשה']</option></datalist></td><td>להסיף הערה חדשה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='פתח את כל השדות']<datalist><option>//button[text()='פתח את כל השדות']</option></datalist></td><td>פתח את כל השדות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[1]<datalist><option>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]<datalist><option>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[2]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='temp@gmail.com']<datalist><option>//span[text()='temp@gmail.com']</option><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option></datalist></td><td>temp@gmail.com</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='0547019283']<datalist><option>//span[text()='0547019283']</option><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option></datalist></td><td>0547019283</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify modify form</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//button[text()='ערוך']<datalist><option>//button[text()='ערוך']</option></datalist></td><td>ערוך</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='שמור']<datalist><option>//div[text()='שמור']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='חזור']<datalist><option>//div[text()='חזור']</option></datalist></td><td>חזור</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h1[text()='להוסיף  מספר טלפון']<datalist><option>//h1[text()='להוסיף  מספר טלפון']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='פתח את כל השדות']<datalist><option>//button[text()='פתח את כל השדות']</option></datalist></td><td>פתח את כל השדות</td>
+</tr>
+<tr><td>click</td><td>//button[text()='פתח את כל השדות']<datalist><option>//button[text()='פתח את כל השדות']</option></datalist></td><td>פתח את כל השדות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='תור']<datalist><option>//label[text()='תור']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='קבע תור חדש']<datalist><option>//label[text()='קבע תור חדש']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='debt-header']<datalist><option>//div[@class='header-text']</option><option>//span[text()='$']</option><option>//div[@class='debt-header']</option></datalist></td><td>חובות$10</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='debt-list-name']<datalist><option>//div[@class='debt-list-name']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sdcsdc'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='$'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להוסיף חוב חדש'])[1]/preceding::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הערות'])[2]/preceding::img[2]</option><option>//div[@id='debts']/div[2]/div/div[2]/img</option><option>//div[2]/div/div[2]/img</option><option>css=div.right-side &gt; img</option></datalist></td><td>10$חוב של לקוח זמני</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='להוסיף חוב חדש']<datalist><option>//span[text()='להוסיף חוב חדש']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='הערות'])[2]<datalist><option>xpath=(//span[text()='הערות'])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='להסיף הערה חדשה']<datalist><option>//label[text()='להסיף הערה חדשה']</option></datalist></td><td>להסיף הערה חדשה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='גלריה']<datalist><option>//div[text()='גלריה']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='קבצים: 0']<datalist><option>//div[text()='קבצים: 0']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='הוסף קובץ חדש']<datalist><option>//label[text()='הוסף קובץ חדש']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='קבוצות']<datalist><option>//span[text()='קבוצות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/profile_plus.svg"]<datalist><option>//img[@src="/public/clients-details/profile_plus.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]<datalist><option>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]<datalist><option>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[3]<datalist><option>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[3]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@class='save-btn']<datalist><option>//div[@class='save-btn']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">modify פרטים אישיים</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//button[text()='ערוך']<datalist><option>//button[text()='ערוך']</option></datalist></td><td>ערוך</td>
+</tr>
+<tr><td>click</td><td>xpath=(//div[@class='del-wrap'])[1]<datalist><option>xpath=(//div[@class='del-wrap'])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@id='name-input']<datalist><option>//input[@value='Temp Client']</option><option>//input[@value='Temp Client katalon']</option><option>//input[@id='name-input']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='name-input']<datalist><option>//input[@value='Temp Client']</option><option>//input[@value='Temp Client katalon']</option><option>//input[@id='name-input']</option></datalist></td><td>Temp Client katalon modify</td>
+</tr>
+<tr><td>click</td><td>xpath=(//div[@class='del-wrap'])[2]<datalist><option>xpath=(//div[@class='del-wrap'])[2]</option><option>xpath=(//div[@class='del-wrap'])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@type='tel']<datalist><option>//input[@type='tel']</option></datalist></td><td>077777777</td>
+</tr>
+<tr><td>click</td><td>//div[@class='add-phones']//h1<datalist><option>//h1[text()='להוסיף מספר טלפון']</option><option>//h1[text()='להוסיף מספר טלפון']</option><option>//div[@class='add-phones']//h1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@value=""]<datalist><option>//input[@value=""]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value=""]<datalist><option>//input[@value=""]</option></datalist></td><td>077777778</td>
+</tr>
+<tr><td>click</td><td>xpath=(//div[@class='del-wrap'])[4]<datalist><option>xpath=(//div[@class='del-wrap'])[4]</option><option>xpath=(//div[@class='del-wrap'])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@type="email"]<datalist><option>//input[@type="email"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@type="email"]<datalist><option>//input[@type="email"]</option></datalist></td><td>temp_modify@gmail.com</td>
+</tr>
+<tr><td>click</td><td>xpath=(//div[@class='del-wrap'])[5]<datalist><option>xpath=(//div[@class='del-wrap'])[5]</option><option>xpath=(//div[@class='del-wrap'])[4]</option><option>xpath=(//div[@class='del-wrap'])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הזן שאילתה"]<datalist><option>//input[@placeholder="הזן שאילתה"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזן שאילתה"]<datalist><option>//input[@placeholder="הזן שאילתה"]</option></datalist></td><td>רוקח 18, תל אביב, ישראל</td>
+</tr>
+<tr><td>click</td><td>xpath=(//div[@class='del-wrap'])[6]<datalist><option>xpath=(//div[@class='del-wrap'])[6]</option><option>xpath=(//div[@class='del-wrap'])[5]</option><option>xpath=(//div[@class='del-wrap'])[4]</option><option>xpath=(//div[@class='del-wrap'])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[text()='נ']<datalist><option>//div[text()='נ']</option></datalist></td><td>נ</td>
+</tr>
+<tr><td>select</td><td>//select[1]<datalist><option>//select[1]</option><option>//select[3]</option><option>//select[2]</option></datalist></td><td>value=1960</td>
+</tr>
+<tr><td>select</td><td>//select[2]<datalist><option>//select[2]</option><option>//select[3]</option><option>//option</option></datalist></td><td>value=11</td>
+</tr>
+<tr><td>select</td><td>//select[3]<datalist><option>//select[3]</option></datalist></td><td>value=11</td>
+</tr>
+<tr><td>click</td><td>//div[@class='save-btn']<datalist><option>//div[@class='save-btn']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">modify חובות</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/clients-details/butn-not.svg"]<datalist><option>//img[@src="/public/clients-details/butn-not.svg"]</option><option>//img[@src="/public/clients-details/x-circle.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//input[@value="חוב  של לקוח זמני"]<datalist><option>//input[@placeholder="תיאור חוב"]</option><option>//input[@value="חוב של לקוח זמני"]</option><option>//input[@value="חוב  של לקוח זמני"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="תיאור חוב"]<datalist><option>//input[@placeholder="תיאור חוב"]</option><option>//input[@value="חוב של לקוח זמני"]</option><option>//textarea[@placeholder="תיאור"]</option><option>//textarea[@placeholder="תיאור חוב"]</option></datalist></td><td>חוב  של לקוח זמני חדש</td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/clients-details/plus.svg"]<datalist><option>//img[@src="/public/clients-details/plus.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='debts']//p[text()='שמור']<datalist><option>//div[@id='debts']//p[text()='שמור']</option><option>//button[@class='save']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">modify הערות</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[2]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[@src="/public/clients-details/x-circle.svg"]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]</option><option>//img[@src="/public/clients-details/x-circle.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//textarea[text()='הערות של לקוח זמני']<datalist><option>//textarea[text()='הערות של לקוח זמני']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td>הערות של לקוח זמני חדש</td>
+</tr>
+<tr><td>click</td><td>//button[@class='save']<datalist><option>//div[text()='שמור']</option><option>//button[@class='save']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">go to modifyed client</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client katalon modify</td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon modify']</option><option>//div[text()='Temp Client katalon']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon modify']</option><option>//div[text()='Temp Client katalon']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify client after modifying</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//h1[text()='Temp Client katalon modify']<datalist><option>//h1[text()='Temp Client katalon modify']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//h1[text()='Temp Client katalon modify']<datalist><option>//h1[text()='Temp Client katalon']</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option><option>//div[@class='client-name']/h1</option><option>//h1[text()='Temp Client']</option><option>//h1[text()='Temp Client katalon modify']</option></datalist></td><td>Temp Client katalon modify</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/arrow-back.svg"]<datalist><option>//img[@src="/public/clients-details/arrow-back.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/ic_menu.svg"]<datalist><option>//img[@src="/public/clients-details/ic_menu.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='בן 58 שנים']<datalist><option>//span[text()='בן 68 שנים']</option><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option><option>//span[text()='בן 58 שנים']</option></datalist></td><td>בן 58 שנים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='VIP']<datalist><option>//span[text()='VIP']</option></datalist></td><td>VIP</td>
+</tr>
+<tr><td>verifyVisible</td><td>//form<datalist><option>//form</option></datalist></td><td>סטטוסלהוסיף סטטוס</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/pencil.svg"]<datalist><option>//img[@src="/public/clients-details/pencil.svg"]</option></datalist></td><td>pen</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='Temp Client katalon modify']<datalist><option>//span[text()='Temp Client katalon modify']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='077777777']<datalist><option>//span[text()='077777777']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='077777778']<datalist><option>//span[text()='077777778']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='temp_modify@gmail.com']<datalist><option>//span[text()='temp_modify@gmail.com']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='רוקח 18, תל אביב, ישראל']<datalist><option>//div[text()='רוקח 18, תל אביב, ישראל']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='נ']<datalist><option>//span[text()='נ']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='1960-12-11']<datalist><option>//span[text()='1960-12-11']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='debt-header']<datalist><option>//div[@class='header-text']</option><option>//span[text()='$']</option><option>//div[@class='debt-header']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=//div[@class='debt-list-name']<datalist><option>//div[@class='debt-list-name']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sdcsdc'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='$'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להוסיף חוב חדש'])[1]/preceding::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הערות'])[2]/preceding::img[2]</option><option>//div[@id='debts']/div[2]/div/div[2]/img</option><option>//div[2]/div/div[2]/img</option><option>css=div.right-side &gt; img</option><option>xpath=//div[@class='debt-list-name']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='חובות']<datalist><option>//span[text()='חובות']</option></datalist></td><td>חובות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הוסף קובץ חדש לגלריה']<datalist><option>//span[text()='הוסף קובץ חדש לגלריה']</option></datalist></td><td>הוסף קובץ חדש לגלריה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הערות']<datalist><option>//span[text()='הערות']</option></datalist></td><td>הערות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הוסף מנוי חדש']<datalist><option>//span[text()='הוסף מנוי חדש']</option><option>//span[text()='הוסף	מנוי חדש']</option></datalist></td><td>הוסף	מנוי חדש</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='קבע תור ראשון']<datalist><option>//span[text()='קבע תור ראשון']</option></datalist></td><td>קבע תור ראשון</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='היסטוריה']<datalist><option>//span[text()='היסטוריה']</option><option>//span[text()='קבע תור ראשון']</option></datalist></td><td>היסטוריה</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='ערוך']<datalist><option>//button[text()='ערוך']</option></datalist></td><td>ערוך</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/edit-note.svg"]<datalist><option>//img[@src="/public/clients-details/edit-note.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//h2[text()='פרטים אישיים']<datalist><option>//h2[text()='פרטים אישיים']</option></datalist></td><td>פרטים אישיים</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='שם לקוח']<datalist><option>//span[text()='שם לקוח']</option></datalist></td><td>שם לקוח</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='טלפון']<datalist><option>//span[text()='טלפון']</option></datalist></td><td>טלפון</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/send-sms.svg"]<datalist><option>//img[@src="/public/clients-details/send-sms.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="sms:077777777"]<datalist><option>//a[@href="sms:0547019283"]</option><option>//a[@href="sms:077777777"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="tel:077777777"]<datalist><option>//a[@href="tel:0547019283"]</option><option>//a[@href="tel:077777777"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="sms:077777778"]<datalist><option>//a[@href="sms:0547019283"]</option><option>//a[@href="sms:077777778"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="tel:077777778"]<datalist><option>//a[@href="tel:0547019283"]</option><option>//a[@href="tel:077777778"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/call.svg"])[1]<datalist><option>//img[@src="/public/clients-details/call.svg"]</option><option>xpath=(//img[@src="/public/clients-details/call.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/call.svg"])[2]<datalist><option>//img[@src="/public/clients-details/call.svg"]</option><option>xpath=(//img[@src="/public/clients-details/call.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src='/public/clients-details/ic_email.svg']<datalist><option>//img[@src='/public/clients-details/ic_email.svg']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="mailto:temp_modify@gmail.com"]<datalist><option>//a[@href="mailto:temp@gmail.com"]</option><option>//a[@href="mailto:temp_modify@gmail.com"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/icon-address.png"]<datalist><option>//img[@src="/public/clients-details/icon-address.png"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="https://www.google.com/maps/place/רוקח 18, תל אביב, ישראל"]<datalist><option>//a[@href="https://www.google.com/maps/place/רוקח 18, רמת גן, ישראל"]</option><option>//a[@href="https://www.google.com/maps/place/רמת גן, רוקח 18"]</option><option>//a[@href="https://www.google.com/maps/place/רוקח 18, תל אביב, ישראל"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/waze.png"]<datalist><option>//img[@src="/public/clients-details/waze.png"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="https://waze.com/ul?q=רוקח 18, תל אביב, ישראל"]<datalist><option>//a[@href="https://waze.com/ul?q=רוקח 18, רמת גן, ישראל"]</option><option>//a[@href="https://waze.com/ul?q=רמת גן, רוקח 18"]</option><option>//a[@href="https://waze.com/ul?q=רוקח 18, תל אביב, ישראל"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='מין']<datalist><option>//span[text()='מין']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='יום הולדת']<datalist><option>//span[text()='יום הולדת']</option></datalist></td><td>יום הולדת</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הלקוח אישר קבלת תוכן פרסומי']<datalist><option>//span[text()='הלקוח אישר קבלת תוכן פרסומי']</option></datalist></td><td>הלקוח אישר קבלת תוכן פרסומי</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[1]<datalist><option>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]<datalist><option>xpath=(//img[@src="/public/clients-details/c_add_stroke.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[2]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='פתח את כל השדות']<datalist><option>//button[text()='פתח את כל השדות']</option></datalist></td><td>פתח את כל השדות</td>
+</tr>
+<tr><td>click</td><td>//button[text()='פתח את כל השדות']<datalist><option>//button[text()='פתח את כל השדות']</option></datalist></td><td>פתח את כל השדות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='תור']<datalist><option>//label[text()='תור']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='קבע תור חדש']<datalist><option>//label[text()='קבע תור חדש']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='גלריה']<datalist><option>//div[text()='גלריה']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='קבצים: 0']<datalist><option>//div[text()='קבצים: 0']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='הוסף קובץ חדש']<datalist><option>//label[text()='הוסף קובץ חדש']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='קבוצות']<datalist><option>//span[text()='קבוצות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>click</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='modal-body']<datalist><option>//div[@class='modal-body']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-details/icon_delete_selected.svg"]<datalist><option>//img[@src="/public/clients-details/icon_delete_selected.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//label[text()='בטוח רוצים למחוק את הלקוח?']<datalist><option>//label[text()='בטוח רוצים למחוק את הלקוח?']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='לא']<datalist><option>//button[text()='לא']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='כן']<datalist><option>//button[text()='כן']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='לא']<datalist><option>//button[text()='לא']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete temp client</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+</tr>
+<tr><td>click</td><td>//button[text()='כן']<datalist><option>//button[text()='כן']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='modal-body']<datalist><option>//div[@class='modal-body']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[text()='מאגר לקוחות']<datalist><option>//div[text()='מאגר לקוחות']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">check client deletion</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client katalon modify</td>
+</tr>
+<tr><td>verifyElementNotPresent</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon']</option><option>//div[text()='Temp Client katalon modify']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
