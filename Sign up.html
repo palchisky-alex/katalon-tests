@@ -83,7 +83,7 @@
 <tr><td rowspan="1" colspan="3">register a new user</td></tr>
 </thead>
 <tbody>
-<tr><td>type</td><td>//input[@type='email']<datalist><option>//input[@type='email']</option></datalist></td><td>katalon@gmail.com</td>
+<tr><td>type</td><td>//input[@type='email']<datalist><option>//input[@type='email']</option></datalist></td><td>katalon_${randomInt}@gmail.com</td>
 </tr>
 <tr><td>type</td><td>//input[@type='password']<datalist><option>//input[@type='pass']</option><option>//input[@type='password']</option></datalist></td><td>${passwordForTest}</td>
 </tr>
@@ -121,7 +121,23 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='בואו נתחיל!']<datalist><option>//span[text()='בואו נתחיל!']</option></datalist></td><td>verify button</td>
 </tr>
-<tr><td>click</td><td>//button[text()='לדלג הלאה']<datalist><option>//button[text()='לדלג הלאה']</option></datalist></td><td></td>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">check in bussness type</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//div[@class='bussiness-type']<datalist><option>//div[@class='bussiness-type']</option><option>//button[text()='לדלג הלאה']</option></datalist></td><td>click on button "עצמאי"</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='בחרת ב:']<datalist><option>//div[text()='בחרת ב:']</option></datalist></td><td>verify text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='עצמאי']<datalist><option>//span[text()='עצמאי']</option></datalist></td><td>verify text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/signup/media/business_types_icons/violet-one-on-one_meetings.svg"]<datalist><option>//img[@src="/public/signup/media/business_types_icons/violet-one-on-one_meetings.svg"]</option></datalist></td><td>verify new icon for  "עצמאי"</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='bussiness-type__checkmark']<datalist><option>//div[@class='bussiness-type__checkmark']</option></datalist></td><td>verify new div with V</td>
+</tr>
+<tr><td>click</td><td>//span[text()='בואו נתחיל!']/..<datalist><option>//span[text()='בואו נתחיל!']</option><option>//span[text()='בואו נתחיל!']/..</option></datalist></td><td>click on save button</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -154,6 +170,44 @@
 <tr><td>click</td><td>//label[@for="twice"]/span<datalist><option>//label[@for="twice"]/span</option></datalist></td><td>click on second checkbox</td>
 </tr>
 <tr><td>click</td><td>//button<datalist><option>//label[@for="twice"]/span</option><option>//button</option></datalist></td><td>click on save button</td>
+</tr>
+<tr><td>waitForVisible</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td>wait for menu button on calendar</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">log out</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td>click on menu button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon')]<datalist><option>//p[contains(text(), 'katalon')]</option></datalist></td><td>verify new user name in top of the menu</td>
+</tr>
+<tr><td>verifyVisible</td><td>//a[@href="/he/logout"]<datalist><option>//a[@href="/he/logout"]</option></datalist></td><td>verify log out button</td>
+</tr>
+<tr><td>click</td><td>//a[@href="/he/logout"]<datalist><option>//a[@href="/he/logout"]</option></datalist></td><td>cllick on log out button</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify login with new user</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/login<datalist><option>https://lista.atzma.im/he/login</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[2]</option><option>//input[@name='email']</option><option>//div[@id='root']/div/div/form/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="email"]</option></datalist></td><td>katalon_${randomInt}@gmail.com</td>
+</tr>
+<tr><td>type</td><td>name=pass<datalist><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[1]</option><option>//input[@name='pass']</option><option>//div[@id='root']/div/div/form/div[3]/input</option><option>//div[3]/input</option><option>css=input[name="pass"]</option></datalist></td><td>${passwordForTest}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='להיכנס']<datalist><option>//button[text()='להיכנס']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הירשם'])[1]/preceding::button[1]</option><option>//button[@type='submit']</option><option>//div[@id='root']/div/div/form/button[2]</option><option>//button[2]</option><option>css=button.login-form__button.login-button</option></datalist></td><td>click on enter button</td>
+</tr>
+<tr><td>waitForVisible</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td>wait for menu button on calendar</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td>success login with new user </td>
+</tr>
+<tr><td>click</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option></datalist></td><td>click on menu button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon')]<datalist><option>//p[contains(text(), 'katalon')]</option></datalist></td><td>verify new user name in top of the menu</td>
 </tr>
 </tbody></table>
 </body>
