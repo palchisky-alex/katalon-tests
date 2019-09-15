@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-	<title>Calendar settings page - he</title>
+	<title>N_Calendar settings page - he</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -27,11 +27,9 @@
 </tr>
 <tr><td>verifyVisible</td><td>//button[@class='history_back history_back_ltr']<datalist><option>//button[@class='history_back history_back_ltr']</option></datalist></td><td>back arrow</td>
 </tr>
-<tr><td>verifyVisible</td><td>//h3[text()='Aqua Plants']<datalist><option>//h3[text()='Aqua Plants']</option></datalist></td><td>Aqua Plants</td>
+<tr><td>verifyVisible</td><td>//h3[@class='business_name']<datalist><option>//h3[@class='business_name']</option><option>//h3[text()='Aqua Plants']</option></datalist></td><td>business name</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='initiatives']<datalist><option>//p[text()='initiatives']</option></datalist></td><td>initiatives</td>
-</tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/business_data/4/aquaplants.jpg"]<datalist><option>//img[@src="/public/business_data/4/aquaplants.jpg"]</option></datalist></td><td>aqua logo</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='לקוחות שהצטרפו החודש']<datalist><option>//p[text()='לקוחות שהצטרפו החודש']</option></datalist></td><td>לקוחות שהצטרפו החודש</td>
 </tr>
@@ -80,10 +78,6 @@
 <tr><td>verifyVisible</td><td>//p[text()='משך הסלוט']<datalist><option>//p[text()='משך הסלוט']</option></datalist></td><td>משך הסלוט</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='משך טיפול בררת מחדל']<datalist><option>//p[text()='משך טיפול בררת מחדל']</option></datalist></td><td>משך טיפול בררת מחדל</td>
-</tr>
-<tr><td>verifyVisible</td><td>//label[text()='האם לאפשר קביעת תורים מחוץ לסלוט']<datalist><option>//label[text()='האם לאפשר קביעת תורים מחוץ לסלוט']</option></datalist></td><td>האם לאפשר קביעת תורים מחוץ לסלוט</td>
-</tr>
-<tr><td>verifyVisible</td><td>//input[@id='scheduling_outside']<datalist><option>//input[@id='scheduling_outside']</option></datalist></td><td>checkbox</td>
 </tr>
 <tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[1]<datalist><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[1]</option></datalist></td><td>arrow_drop_down 1</td>
 </tr>
@@ -167,13 +161,13 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='09:00']<datalist><option>//span[text()='09:00']</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='23:00']</option></datalist></td><td>verify day finish</td>
+<tr><td>verifyVisible</td><td>//span[text()='21:00']<datalist><option>//span[text()='23:00']</option><option>//span[text()='21:00']</option></datalist></td><td>verify default day finish</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify ראשון</td>
+<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify default  ראשון</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify משך סלוט</td>
+<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify default  משך סלוט</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify משך טיפול</td>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='10']</option><option>//span[text()='30']</option></datalist></td><td>verify default  משך טיפול</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -275,13 +269,13 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='09:00']<datalist><option>//span[text()='09:00']</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='23:00']</option></datalist></td><td>verify day finish</td>
+<tr><td>verifyVisible</td><td>//span[text()='21:00']<datalist><option>//span[text()='21:00']</option><option>//span[text()='23:00']</option></datalist></td><td>verify default day finish</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="יומן יומי"]<datalist><option>//*[text()="יומן יומי"]</option></datalist></td><td>verify יומן יומי</td>
+<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify default  ראשון</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify משך סלוט</td>
+<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify default  משך סלוט</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify משך טיפול</td>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='30']</option><option>//span[text()='10']</option></datalist></td><td>verify default  משך טיפול</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -365,13 +359,13 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='09:00']<datalist><option>//span[text()='09:00']</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='23:00']</option></datalist></td><td>verify day finish</td>
+<tr><td>verifyVisible</td><td>//span[text()='21:00']<datalist><option>//span[text()='21:00']</option><option>//span[text()='23:00']</option></datalist></td><td>verify default day finish</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="יומן יומי"]<datalist><option>//*[text()="יומן יומי"]</option></datalist></td><td>verify יומן יומי</td>
+<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify default  ראשון</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify ראשון</td>
+<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify default  משך סלוט</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify משך טיפול</td>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='30']</option><option>//span[text()='10']</option></datalist></td><td>verify default  משך טיפול</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -413,15 +407,13 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='09:00']<datalist><option>//span[text()='09:00']</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='23:00']</option></datalist></td><td>verify day finish</td>
+<tr><td>verifyVisible</td><td>//span[text()='21:00']<datalist><option>//span[text()='21:00']</option><option>//span[text()='23:00']</option></datalist></td><td>verify default day finish</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="יומן יומי"]<datalist><option>//*[text()="יומן יומי"]</option></datalist></td><td>verify יומן יומי</td>
+<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify default  ראשון</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify ראשון</td>
+<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify default  משך סלוט</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify משך סלוט</td>
-</tr>
-<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify משך טיפול</td>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='30']</option><option>//span[text()='10']</option></datalist></td><td>verify default  משך טיפול</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -429,27 +421,43 @@
 <tr><td rowspan="1" colspan="3">day finish hour</td></tr>
 </thead>
 <tbody>
-<tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='09:00']</option><option>//span[text()='23:00']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//span[text()='21:00']<datalist><option>//span[text()='09:00']</option><option>//span[text()='23:00']</option><option>//span[text()='21:00']</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option></datalist></td><td>plus 2</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:15']<datalist><option>//span[text()='09:15']</option><option>//span[text()='23:15']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//span[text()='21:15']<datalist><option>//span[text()='09:15']</option><option>//span[text()='23:15']</option><option>//span[text()='21:15']</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option></datalist></td><td>plus 2</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:30']<datalist><option>//span[text()='09:30']</option><option>//span[text()='23:30']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//span[text()='21:30']<datalist><option>//span[text()='09:30']</option><option>//span[text()='23:30']</option><option>//span[text()='21:30']</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option></datalist></td><td>plus 2</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:45']<datalist><option>//span[text()='09:45']</option><option>//span[text()='23:45']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//span[text()='21:45']<datalist><option>//span[text()='09:45']</option><option>//span[text()='23:45']</option><option>//span[text()='21:45']</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>plus 2</td>
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/settings/media/warning.svg"]<datalist><option>//img[@src="/public/settings/media/warning.svg"]</option></datalist></td><td>error message  icon</td>
 </tr>
 <tr><td>verifyVisible</td><td>//div[@class='modal-body-warning']<datalist><option>//div[@class='modal-body-warning']</option></datalist></td><td>error div opend</td>
 </tr>
-<tr><td>verifyVisible</td><td>//label[text()="The 'from' time can't be later than 'to' time"]<datalist><option>//label[text()="The 'from' time can't be later than 'to' time"]</option></datalist></td><td>error message</td>
+<tr><td>verifyVisible</td><td>//label[text()="זמן של תחילת היום לא יכול להיות גדול יותר מהסיום"]<datalist><option>//label[text()="The 'from' time can't be later than 'to' time"]</option><option>//label[text()="זמן של תחילת היום לא יכול להיות גדול יותר מהסיום"]</option></datalist></td><td>error message</td>
 </tr>
 <tr><td>verifyVisible</td><td>//button[text()='Ok']<datalist><option>//button[text()='Ok']</option></datalist></td><td>error message - OK</td>
 </tr>
@@ -471,15 +479,33 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='09:15']</option><option>//span[text()='23:00']</option></datalist></td><td></td>
 </tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='22:45']<datalist><option>//span[text()='23:00']</option><option>//span[text()='09:15']</option><option>//span[text()='22:45']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option></datalist></td><td>minus 2</td>
+</tr>
 <tr><td>verifyVisible</td><td>//span[text()='09:00']<datalist><option>//span[text()='09:00']</option></datalist></td><td>verify day start</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="יומן יומי"]<datalist><option>//*[text()="יומן יומי"]</option></datalist></td><td>verify יומן יומי</td>
+<tr><td>verifyVisible</td><td>//span[text()='21:00']<datalist><option>//span[text()='21:00']</option><option>//span[text()='23:00']</option></datalist></td><td>verify default day finish</td>
 </tr>
-<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify ראשון</td>
+<tr><td>verifyVisible</td><td>//*[text()="ראשון"]<datalist><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>verify default  ראשון</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify משך סלוט</td>
+<tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>verify default  משך סלוט</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify משך טיפול</td>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='30']</option><option>//span[text()='10']</option></datalist></td><td>verify default  משך טיפול</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -487,11 +513,15 @@
 <tr><td rowspan="1" colspan="3">procedure duration</td></tr>
 </thead>
 <tbody>
-<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify 10 min</td>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='10']</option><option>//span[text()='15']</option><option>//span[text()='30']</option></datalist></td><td>verify 13 min</td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/minus.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[3]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='15']<datalist><option>//span[text()='30']</option><option>//span[text()='10']</option><option>//span[text()='15']</option></datalist></td><td>verify 15 min</td>
 </tr>
 <tr><td>store</td><td>1<datalist><option>1</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]</option></datalist></td><td>r</td>
 </tr>
-<tr><td>while</td><td>${r}&lt;56<datalist><option>${w}&lt;7</option><option>${iii}&lt;7</option><option>${ii}&lt;7</option><option>${ii}&lt;6</option><option>ii&lt;5</option><option>i==2</option><option>i==1</option><option>i&lt;10</option><option>ii&lt;10</option><option>tipul&lt;5</option><option>il&lt;5</option><option>i&lt;5</option><option>i=&lt;5</option><option>i&gt;5</option><option>${ii}&lt;5</option><option>${r}&lt;7</option><option>${r}&lt;9</option><option>${r}&lt;29</option><option>${r}&lt;40</option><option>${r}&lt;60</option><option>${r}&lt;50</option><option>${r}&lt;56</option></datalist></td><td>click 56 times on plus</td>
+<tr><td>while</td><td>${r}&lt;48<datalist><option>${w}&lt;7</option><option>${iii}&lt;7</option><option>${ii}&lt;7</option><option>${ii}&lt;6</option><option>ii&lt;5</option><option>i==2</option><option>i==1</option><option>i&lt;10</option><option>ii&lt;10</option><option>tipul&lt;5</option><option>il&lt;5</option><option>i&lt;5</option><option>i=&lt;5</option><option>i&gt;5</option><option>${ii}&lt;5</option><option>${r}&lt;7</option><option>${r}&lt;9</option><option>${r}&lt;29</option><option>${r}&lt;40</option><option>${r}&lt;60</option><option>${r}&lt;50</option><option>${r}&lt;56</option><option>${r}&lt;47</option><option>${r}&lt;48</option></datalist></td><td>click 56 times on plus</td>
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>id=first-name</option><option>name=firstName</option><option>//input[@id='first-name']</option><option>//form[@id='infoForm']/div/div/input</option><option>//input</option><option>css=#first-name</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option></datalist></td><td>plus 3</td>
 </tr>
@@ -499,7 +529,7 @@
 </tr>
 <tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='835']<datalist><option>//span[text()='100']</option><option>//span[text()='205']</option><option>//span[text()='190']</option><option>//span[text()='370']</option><option>//span[text()='400']</option><option>//span[text()='850']</option><option>//span[text()='835']</option></datalist></td><td>verify  835 min</td>
+<tr><td>verifyVisible</td><td>//span[text()='720']<datalist><option>//span[text()='100']</option><option>//span[text()='205']</option><option>//span[text()='190']</option><option>//span[text()='370']</option><option>//span[text()='400']</option><option>//span[text()='850']</option><option>//span[text()='835']</option><option>//span[text()='730']</option><option>//span[text()='720']</option></datalist></td><td>verify  720 min</td>
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/minus.svg"])[2]</option><option>id=first-name</option><option>name=firstName</option><option>//input[@id='first-name']</option><option>//form[@id='infoForm']/div/div/input</option><option>//input</option><option>css=#first-name</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option></datalist></td><td>plus 3</td>
 </tr>
@@ -507,7 +537,7 @@
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/settings/media/warning.svg"]<datalist><option>//img[@src="/public/settings/media/warning.svg"]</option></datalist></td><td>error message  icon</td>
 </tr>
-<tr><td>verifyVisible</td><td>//label[text()="Default event duration can't be longer than a working day"]<datalist><option>//label[text()="The 'from' time can't be later than 'to' time"]</option><option>//label[text()="Default event duration can't be longer than a working day"]</option></datalist></td><td>error message</td>
+<tr><td>verifyVisible</td><td>//label[text()='משך טיפול בררת מחדל לא יכול להיות יותר ערוך מיום עבודה']<datalist><option>//label[text()="The 'from' time can't be later than 'to' time"]</option><option>//label[text()="Default event duration can't be longer than a working day"]</option><option>//label[text()='משך טיפול בררת מחדל לא יכול להיות יותר ערוך מיום עבודה']</option></datalist></td><td>error message</td>
 </tr>
 <tr><td>verifyVisible</td><td>//button[text()='Ok']<datalist><option>//button[text()='Ok']</option></datalist></td><td>error message - OK</td>
 </tr>
@@ -553,10 +583,6 @@
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='משך טיפול בררת מחדל']<datalist><option>//p[text()='משך טיפול בררת מחדל']</option></datalist></td><td>משך טיפול בררת מחדל</td>
 </tr>
-<tr><td>verifyVisible</td><td>//label[text()='האם לאפשר קביעת תורים מחוץ לסלוט']<datalist><option>//label[text()='האם לאפשר קביעת תורים מחוץ לסלוט']</option></datalist></td><td>האם לאפשר קביעת תורים מחוץ לסלוט</td>
-</tr>
-<tr><td>verifyVisible</td><td>//input[@id='scheduling_outside']<datalist><option>//input[@id='scheduling_outside']</option></datalist></td><td>checkbox</td>
-</tr>
 <tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[1]<datalist><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[1]</option></datalist></td><td>arrow_drop_down 1</td>
 </tr>
 <tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[2]<datalist><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[2]</option></datalist></td><td>arrow_drop_down 2</td>
@@ -581,13 +607,11 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='09:00']<datalist><option>//span[text()='09:00']</option></datalist></td><td>verify יום מתחיל</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='23:00']<datalist><option>//span[text()='09:00']</option><option>//span[text()='23:00']</option></datalist></td><td>verify יום מסתיים</td>
+<tr><td>verifyVisible</td><td>//span[text()='21:00']<datalist><option>//span[text()='09:00']</option><option>//span[text()='23:00']</option><option>//span[text()='21:00']</option></datalist></td><td>verify יום מסתיים</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='15 דקות']<datalist><option>//p[text()='15 דקות']</option></datalist></td><td>משך הסלוט</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='10']<datalist><option>//span[text()='10']</option></datalist></td><td>verify 'משך טיפול בררת מחדל'</td>
-</tr>
-<tr><td>verifyVisible</td><td>//input[@checked='']<datalist><option>//input[@checked='']</option></datalist></td><td>verify "האם לאפשר קביעת תורים מחוץ לסלוט" - checked</td>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='10']</option><option>//span[text()='30']</option></datalist></td><td>verify 'משך טיפול בררת מחדל'</td>
 </tr>
 </tbody></table>
 </body>

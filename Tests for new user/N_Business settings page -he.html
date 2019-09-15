@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-	<title>Business settings page -he</title>
+	<title>N_Business settings page -he</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -30,8 +30,6 @@
 <tr><td>verifyVisible</td><td>//h3[@class='business_name']<datalist><option>//h3[text()='Aqua Plants']</option><option>//h3[@class='business_name']</option></datalist></td><td>business name</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='initiatives']<datalist><option>//p[text()='initiatives']</option></datalist></td><td>initiatives</td>
-</tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/business_data/4/aquaplants.jpg"]<datalist><option>//img[@src="/public/business_data/4/aquaplants.jpg"]</option></datalist></td><td>aqua logo</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='לקוחות שהצטרפו החודש']<datalist><option>//p[text()='לקוחות שהצטרפו החודש']</option></datalist></td><td>לקוחות שהצטרפו החודש</td>
 </tr>
@@ -96,12 +94,20 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">setup company name</td></tr>
+<tr><td rowspan="1" colspan="3">check name input</td></tr>
 </thead>
 <tbody>
-<tr><td>click</td><td>//p[@class='config-value']<datalist><option>//p[@class='config-value']</option></datalist></td><td>click on company name input</td>
+<tr><td>verifyVisible</td><td>//h3[contains(text(), 'katalon_')]<datalist><option>//h3[contains(text(), 'katalon_')]</option></datalist></td><td>verify new user name in cover</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>verify new user name in input</td>
+</tr>
+<tr><td>storeText</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>katalon_user</td>
+</tr>
+<tr><td>click</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>click on katalon user input</td>
 </tr>
 <tr><td>verifyVisible</td><td>//input[@name='name']<datalist><option>//input[@name='name']</option></datalist></td><td>verify Visible name input</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@name='name']<datalist><option>//input[@name='name']</option></datalist></td><td>verify editable name input</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='שנה שם העסק']<datalist><option>//p[text()='שנה שם העסק']</option></datalist></td><td>name input text</td>
 </tr>
@@ -111,13 +117,15 @@
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/settings/media//save_not_active.svg"]<datalist><option>//img[@src="/public/settings/media//save_not_active.svg"]</option></datalist></td><td>disabled save button image</td>
 </tr>
-<tr><td>type</td><td>//input[@name='name']<datalist><option>//p[@class='config-value']</option><option>//input[@name='name']</option></datalist></td><td>Aqua Plants</td>
+<tr><td>type</td><td>//input[@name='name']<datalist><option>//p[@class='config-value']</option><option>//input[@name='name']</option></datalist></td><td>${katalon_user}</td>
 </tr>
 <tr><td>verifyVisible</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option><option>//button[@class='save-btn enabled']</option></datalist></td><td> save button enable</td>
 </tr>
 <tr><td>click</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn enabled']</option><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option></datalist></td><td>click on save button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='Aqua Plants']<datalist><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[text()='Aqua Plants']</option></datalist></td><td>verify new company name</td>
+<tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[text()='Aqua Plants']</option><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>verify new company name</td>
+</tr>
+<tr><td>storeText</td><td>//div[@class='business-name']/p<datalist><option>//div[@class='business-name']/p</option></datalist></td><td>userName</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -125,9 +133,13 @@
 <tr><td rowspan="1" colspan="3">setup phone number</td></tr>
 </thead>
 <tbody>
+<tr><td>verifyVisible</td><td>//p[text()='לחץ כאן כדי להוסיף מספר טלפון של העסק']<datalist><option>//p[text()='לחץ כאן כדי להוסיף מספר טלפון של העסק']</option></datalist></td><td>verify phone input placeholder</td>
+</tr>
 <tr><td>click</td><td>//div[@class='business-phone']<datalist><option>//div[@class='business-phone']</option></datalist></td><td>click on phone input</td>
 </tr>
 <tr><td>verifyVisible</td><td>//input[@name='phone']<datalist><option>//input[@name='name']</option><option>//input[@name='phone']</option></datalist></td><td>verify Visible phone input</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@name='phone']<datalist><option>//input[@name='phone']</option></datalist></td><td>verify phone input Editable</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='שנה מספר טלפון של העסק']<datalist><option>//p[text()='שנה שם העסק']</option><option>//p[text()='שנה מספר טלפון של העסק']</option></datalist></td><td>phone input text</td>
 </tr>
@@ -151,9 +163,13 @@
 <tr><td rowspan="1" colspan="3">setup address</td></tr>
 </thead>
 <tbody>
+<tr><td>verifyVisible</td><td>//p[text()='Israel']<datalist><option>//p[text()='Israel']</option></datalist></td><td>verify default address Visible</td>
+</tr>
 <tr><td>click</td><td>//div[@class='business-address']<datalist><option>//div[@class='business-phone']</option><option>//div[@class='business-address']</option></datalist></td><td>click on address input</td>
 </tr>
-<tr><td>verifyVisible</td><td>//input[@name='address']<datalist><option>//input[@name='phone']</option><option>//input[@name='name']</option><option>//input[@name='address']</option></datalist></td><td>verify Visible address input</td>
+<tr><td>verifyVisible</td><td>//input[@name='address']<datalist><option>//input[@name='phone']</option><option>//input[@name='name']</option><option>//input[@name='address']</option></datalist></td><td>verify visible address input after click</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@name='address']<datalist><option>//input[@name='address']</option></datalist></td><td>verify editable address input after click</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='שנה כתובת העסק']<datalist><option>//p[text()='שנה מספר טלפון של העסק']</option><option>//p[text()='שנה שם העסק']</option><option>//p[text()='שנה כתובת העסק']</option></datalist></td><td>address input text</td>
 </tr>
@@ -177,9 +193,13 @@
 <tr><td rowspan="1" colspan="3">setup mail</td></tr>
 </thead>
 <tbody>
+<tr><td>verifyVisible</td><td>//p[text()='לחץ כאן כדי להוסיף האתר לעסק']<datalist><option>//p[text()='לחץ כאן כדי להוסיף האתר לעסק']</option></datalist></td><td>verify website input placeholder</td>
+</tr>
 <tr><td>click</td><td>//div[@class='website']<datalist><option>//div[@class='business-address']</option><option>//div[@class='business-phone']</option><option>//div[@class='website']</option></datalist></td><td>click on mail input</td>
 </tr>
-<tr><td>verifyVisible</td><td>//input[@name='website']<datalist><option>//input[@name='address']</option><option>//input[@name='phone']</option><option>//input[@name='name']</option><option>//input[@name='website']</option></datalist></td><td>verify Visible mail input</td>
+<tr><td>verifyVisible</td><td>//input[@name='website']<datalist><option>//input[@name='address']</option><option>//input[@name='phone']</option><option>//input[@name='name']</option><option>//input[@name='website']</option></datalist></td><td>verify mail input visible</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@name='website']<datalist><option>//input[@name='website']</option></datalist></td><td>verify mail input editable</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='שנה האתר לעסק']<datalist><option>//p[text()='שנה כתובת העסק']</option><option>//p[text()='שנה מספר טלפון של העסק']</option><option>//p[text()='שנה שם העסק']</option><option>//p[text()='שנה האתר לעסק']</option></datalist></td><td>mail input text</td>
 </tr>
@@ -203,9 +223,13 @@
 <tr><td rowspan="1" colspan="3">setup facebook</td></tr>
 </thead>
 <tbody>
+<tr><td>verifyVisible</td><td>//p[text()='לחץ כאן כדי להוסיף Facebook']<datalist><option>//p[text()='לחץ כאן כדי להוסיף Facebook']</option></datalist></td><td>verify facebook input placeholder </td>
+</tr>
 <tr><td>click</td><td>//div[@class='facebook']<datalist><option>//div[@class='business-address']</option><option>//div[@class='business-phone']</option><option>//div[@class='facebook']</option></datalist></td><td>click on facebook input</td>
 </tr>
 <tr><td>verifyVisible</td><td>//input[@name='facebook']<datalist><option>//input[@name='address']</option><option>//input[@name='phone']</option><option>//input[@name='name']</option><option>//input[@name='facebook']</option></datalist></td><td>verify Visible facebook input</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@name='facebook']<datalist><option>//input[@name='facebook']</option></datalist></td><td>verify facebook input editable</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='שנה Facebook']<datalist><option>//p[text()='שנה כתובת העסק']</option><option>//p[text()='שנה מספר טלפון של העסק']</option><option>//p[text()='שנה שם העסק']</option><option>//p[text()='שנה Facebook']</option></datalist></td><td>Facebook input text</td>
 </tr>
@@ -215,13 +239,13 @@
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/settings/media//save_not_active.svg"]<datalist><option>//img[@src="/public/settings/media//save_not_active.svg"]</option></datalist></td><td>disabled save button image</td>
 </tr>
-<tr><td>type</td><td>//input[@name='facebook']<datalist><option>//input[@name='website']</option><option>//input[@name='address']</option><option>//input[@name='phone']</option><option>//input[@name='name']</option><option>//input[@name='facebook']</option></datalist></td><td>https://www.facebook.com/Atzmaim-314760325683735/</td>
+<tr><td>type</td><td>//input[@name='facebook']<datalist><option>//input[@name='website']</option><option>//input[@name='address']</option><option>//input[@name='phone']</option><option>//input[@name='name']</option><option>//input[@name='facebook']</option></datalist></td><td>https://www.facebook.com/alex.palchitsky</td>
 </tr>
 <tr><td>verifyVisible</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn enabled']</option><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option></datalist></td><td>save button enable</td>
 </tr>
 <tr><td>click</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn enabled']</option><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option></datalist></td><td>click on save button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='https://www.facebook.com/Atzmaim-314760325683735/']<datalist><option>//p[text()='doc999tor@gmail.com']</option><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option><option>//p[text()='https://www.facebook.com/Atzmaim-314760325683735/']</option></datalist></td><td>verify new facebook</td>
+<tr><td>verifyVisible</td><td>//p[text()='https://www.facebook.com/alex.palchitsky']<datalist><option>//p[text()='doc999tor@gmail.com']</option><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option><option>//p[text()='https://www.facebook.com/Atzmaim-314760325683735/']</option><option>//p[text()='https://www.facebook.com/alex.palchitsky']</option></datalist></td><td>verify new facebook</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -229,7 +253,11 @@
 <tr><td rowspan="1" colspan="3">setup about</td></tr>
 </thead>
 <tbody>
-<tr><td>click</td><td>//div[@class='about info']//p[@class='textarea-value']<datalist><option>//div[@class='about info']//p[@class='textarea-value']</option></datalist></td><td>click on 'about' area</td>
+<tr><td>verifyVisible</td><td>//p[text()='ספר על העסק שלך']<datalist><option>//p[text()='ספר על העסק שלך']</option></datalist></td><td>input text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='לחץ כאן כדי לספר על העסק שלך']<datalist><option>//p[text()='לחץ כאן כדי לספר על העסק שלך']</option></datalist></td><td>about textarea placeholder</td>
+</tr>
+<tr><td>click</td><td>//p[text()='לחץ כאן כדי לספר על העסק שלך']<datalist><option>//p[text()='לחץ כאן כדי לספר על העסק שלך']</option></datalist></td><td>about textarea placeholder</td>
 </tr>
 <tr><td>verifyVisible</td><td>//textarea[@name='about']<datalist><option>//textarea[@name='about']</option></datalist></td><td>verify visible 'about' div</td>
 </tr>
@@ -239,13 +267,13 @@
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/settings/media//save_not_active.svg"]<datalist><option>//img[@src="/public/settings/media//save_not_active.svg"]</option></datalist></td><td>disabled save button image</td>
 </tr>
-<tr><td>type</td><td>//textarea[@name='about']<datalist><option>//textarea[@name='about']</option></datalist></td><td>Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום</td>
+<tr><td>type</td><td>//textarea[@name='about']<datalist><option>//textarea[@name='about']</option></datalist></td><td>Katalon - מקום הכי טוב </td>
 </tr>
 <tr><td>verifyVisible</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn enabled']</option><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option></datalist></td><td> save button enable</td>
 </tr>
 <tr><td>click</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn enabled']</option><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option></datalist></td><td>click on save button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']<datalist><option>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']</option></datalist></td><td>verify new about text</td>
+<tr><td>verifyVisible</td><td>//p[text()='Katalon - מקום הכי טוב ']<datalist><option>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']</option><option>//p[text()='Katalon - מקום הכי טוב ']</option></datalist></td><td>verify new about text</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -253,7 +281,11 @@
 <tr><td rowspan="1" colspan="3">setup customer message</td></tr>
 </thead>
 <tbody>
-<tr><td>click</td><td>//div[@class='message info']//p[@class='textarea-value']<datalist><option>//div[@class='message info']</option><option>//div[@class='message info']//p[@class='textarea-value']</option></datalist></td><td>verify visible business message info div</td>
+<tr><td>verifyVisible</td><td>//p[text()='הודעת תודה ללקוחות']<datalist><option>//p[text()='הודעת תודה ללקוחות']</option></datalist></td><td>title text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='לחץ כאן כדי הודעת תודה ללקוחות']<datalist><option>//p[text()='לחץ כאן כדי הודעת תודה ללקוחות']</option></datalist></td><td>input placeholder</td>
+</tr>
+<tr><td>click</td><td>//p[text()='לחץ כאן כדי הודעת תודה ללקוחות']<datalist><option>//div[@class='message info']</option><option>//div[@class='message info']//p[@class='textarea-value']</option><option>//p[text()='לחץ כאן כדי הודעת תודה ללקוחות']</option></datalist></td><td>verify visible business message info div</td>
 </tr>
 <tr><td>verifyVisible</td><td>//textarea[@name='thank']<datalist><option>//textarea[@name='thank']</option></datalist></td><td>verify visible 'thank' input</td>
 </tr>
@@ -277,13 +309,13 @@
 <tr><td rowspan="1" colspan="3">verify all business settings</td></tr>
 </thead>
 <tbody>
-<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option><option>${Lista.Home.he}</option></datalist></td><td></td>
-</tr>
-<tr><td>refresh</td><td><datalist><option></option></datalist></td><td></td>
+<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings/business_settings_group</option><option>https://lista.atzma.im/he/settings</option><option>${Lista.Home.he}</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//p[text()='הגדרות עסק']<datalist><option>//p[text()='הגדרות עסק']</option></datalist></td><td>click on הגדרות עסק</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='Aqua Plants']<datalist><option>//p[text()='Aqua Plants']</option><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option></datalist></td><td>verify new company name</td>
+<tr><td>verifyText</td><td>//h3[@class="business_name"]<datalist><option>//p[text()='Aqua Plants']</option><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[contains(text(), 'katalon_')]</option><option>${userName}</option><option>${katalon_user}</option><option>//h3[@class="business_name"]</option></datalist></td><td>${katalon_user}</td>
+</tr>
+<tr><td>verifyText</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//h3[text()='Aqua Plants']</option><option>//h3[@class="business_name"]</option><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>${katalon_user}</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='0547613154']<datalist><option>//p[text()='0547613154']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[2]</option><option>//h3[text()='0547613154']</option></datalist></td><td>verify new phone</td>
 </tr>
@@ -291,21 +323,19 @@
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='doc999tor@gmail.com']<datalist><option>//p[text()='doc999tor@gmail.com']</option><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option></datalist></td><td>verify new mail</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='https://www.facebook.com/Atzmaim-314760325683735/']<datalist><option>//p[text()='https://www.facebook.com/Atzmaim-314760325683735/']</option><option>//p[text()='doc999tor@gmail.com']</option><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option></datalist></td><td>verify new facebook</td>
+<tr><td>verifyVisible</td><td>//p[text()='https://www.facebook.com/alex.palchitsky']<datalist><option>//p[text()='https://www.facebook.com/Atzmaim-314760325683735/']</option><option>//p[text()='doc999tor@gmail.com']</option><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option><option>//p[text()='https://www.facebook.com/alex.palchitsky']</option></datalist></td><td>verify new facebook</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']<datalist><option>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']</option></datalist></td><td>verify new about text</td>
+<tr><td>verifyVisible</td><td>//p[text()='Katalon - מקום הכי טוב ']<datalist><option>//p[text()='Aqua Plants - מקום הכי טוב לקנות צמחי אקווריום']</option><option>//p[text()='Katalon - מקום הכי טוב ']</option></datalist></td><td>verify new about text</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='תודה רבה לקוחות!!!']<datalist><option>//p[text()='תודה רבה לקוחות!!!']</option></datalist></td><td>verify new message for client</td>
 </tr>
 <tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyVisible</td><td>//h3[text()='Aqua Plants']<datalist><option>//h3[text()='Aqua Plants']</option></datalist></td><td>check new company name on main page</td>
-</tr>
 <tr><td>click</td><td>//button[@class='menu']<datalist><option>//button[@class='menu']</option></datalist></td><td>click on menu</td>
 </tr>
 <tr><td>verifyVisible</td><td>//div[@id='menu_modal']<datalist><option>//div[@id='menu_modal']</option></datalist></td><td>verify Visible menu div</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='Aqua Plants']<datalist><option>//p[text()='Aqua Plants']</option></datalist></td><td>verify company name in menu</td>
+<tr><td>verifyText</td><td>//p[@class='business_name']<datalist><option>//p[text()='Aqua Plants']</option><option>//p[@class='business_name']</option></datalist></td><td>${katalon_user}</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='תל אביב, דיזנגוף 100, ישראל']<datalist><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option></datalist></td><td>verify address in menu</td>
 </tr>
