@@ -8,7 +8,7 @@
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">go to settings paage</td></tr>
+<tr><td rowspan="1" colspan="3">go to settings page</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
@@ -53,9 +53,7 @@
 </tr>
 <tr><td>click</td><td>//li[text()="60"]<datalist><option>//li[text()="60"]</option><option>//*[text()="5"]</option><option>//*[text()="ראשון"]</option><option>//*[text()="יומן חודשי"]</option><option>//*[text()="יומן שבועי"]</option></datalist></td><td>click on 60</td>
 </tr>
-<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]</option></datalist></td><td>click on 'משך טיפול בררת מחדל' plus</td>
-</tr>
-<tr><td>click</td><td>//input[@id='scheduling_outside']<datalist><option>//input[@id='scheduling_outside']</option></datalist></td><td>disable "האם לאפשר קביעת תורים מחוץ לסלוט"</td>
+<tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[2]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[3]</option></datalist></td><td>click on 'משך טיפול בררת מחדל' plus - 90 min</td>
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]<datalist><option>xpath=(//img[@src="/public/settings/media/plus.svg"])[1]</option><option>xpath=(//img[@src="/public/settings/media//arrow_drop_down.svg"])[3]</option></datalist></td><td>click on 'start day' plus - 10:00</td>
 </tr>
@@ -75,13 +73,11 @@
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='60 דקות']<datalist><option>//p[text()='60 דקות']</option></datalist></td><td>verify  60 דקות - slot duration</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='70']<datalist><option>//span[text()='10']</option><option>//span[text()='70']</option></datalist></td><td>verify 'משך טיפול בררת מחדל'</td>
-</tr>
-<tr><td>verifyNotVisible</td><td>//input[@checked='']<datalist><option>//input[@checked='']</option></datalist></td><td>verify "האם לאפשר קביעת תורים מחוץ לסלוט" - disable</td>
+<tr><td>verifyVisible</td><td>//span[text()='90']<datalist><option>//span[text()='10']</option><option>//span[text()='70']</option><option>//span[text()='90']</option></datalist></td><td>verify 'משך טיפול בררת מחדל'</td>
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='10:00']<datalist><option>//span[text()='09:00']</option><option>//span[text()='10:00']</option></datalist></td><td>verify יום מתחיל</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='22:00']<datalist><option>//span[text()='23:00']</option><option>//span[text()='09:00']</option><option>//span[text()='22:00']</option></datalist></td><td>verify יום מסתיים</td>
+<tr><td>verifyVisible</td><td>//span[text()='20:00']<datalist><option>//span[text()='23:00']</option><option>//span[text()='09:00']</option><option>//span[text()='22:00']</option><option>//span[text()='20:00']</option></datalist></td><td>verify יום מסתיים </td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -101,15 +97,13 @@
 <tr><td rowspan="1" colspan="3">verify procedure duration</td></tr>
 </thead>
 <tbody>
-<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option></datalist></td><td></td>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services/adding</option><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option></datalist></td><td></td>
+<tr><td>click</td><td>//div[@class='add-button add-rtl']<datalist><option>//div[@class='add-button add-rtl']</option></datalist></td><td>click  add service button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//div[@class='add-button add-rtl']<datalist><option>//div[@class='add-button add-rtl']</option></datalist></td><td>verify procedure add button visible</td>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services/adding<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services/adding</option></datalist></td><td></td>
 </tr>
-<tr><td>click</td><td>//div[@class='add-button add-rtl']<datalist><option>//div[@class='add-button add-rtl']</option></datalist></td><td>click on  'add button'</td>
-</tr>
-<tr><td>verifyVisible</td><td>//div[text()='70 דקות']<datalist><option>//div[text()='70 דקות']</option></datalist></td><td>verify new procedure duration = 70 דקות</td>
+<tr><td>verifyVisible</td><td>//div[text()='90 דקות']<datalist><option>//div[text()='70 דקות']</option><option>//div[text()='90 דקות']</option></datalist></td><td>verify new procedure duration = 90 דקות</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -146,10 +140,6 @@
 <tr><td>verifyVisible</td><td>//tr[@data-time="18:00:00"]<datalist><option>//tr[@data-time="18:00:00"]</option></datalist></td><td></td>
 </tr>
 <tr><td>verifyVisible</td><td>//tr[@data-time="19:00:00"]<datalist><option>//tr[@data-time="19:00:00"]</option></datalist></td><td></td>
-</tr>
-<tr><td>verifyVisible</td><td>//tr[@data-time="20:00:00"]<datalist><option>//tr[@data-time="20:00:00"]</option></datalist></td><td></td>
-</tr>
-<tr><td>verifyVisible</td><td>//tr[@data-time="21:00:00"]<datalist><option>//tr[@data-time="21:00:00"]</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 </body>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>N_Clients page - he</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify מאגר לקוחות elements</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://atzma.im/he/clients</option><option>https://lista.atzma.im/he/clients</option></datalist></td><td>https://lista.atzma.im/he/clients</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='מאגר לקוחות']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='היו לאחרונה'])[1]/preceding::div[9]</option><option>//div[@id='root']/div/div</option><option>//div[2]/div/div</option><option>css=div.header</option><option>//div[text()='מאגר לקוחות']</option></datalist></td><td>מאגר לקוחות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='more_wrap']</option><option>//span[text()='יום']</option></datalist></td><td>btn menu</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@class='arrow-back']<datalist><option>//img[@class='arrow-back']</option><option>//div[@class='more_wrap']</option><option>//span[text()='יום']</option></datalist></td><td>btn arrow left</td>
+</tr>
+<tr><td>verifyVisible</td><td>//*[@class='floating-button standartLeft']<datalist><option>//div[@class='more_wrap']</option><option>//span[text()='יום']</option><option>//img[@class='arrow-back']</option><option>//*[@class='floating-button standartLeft']</option></datalist></td><td>btn add new client </td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@placeholder='חפש שם, טלפון, או הזן לקוח חדש']<datalist><option>//input[@placeholder='חפש שם, טלפון, או הזן לקוח חדש']</option></datalist></td><td>search placeholder</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[text()='היו לאחרונה']<datalist><option>//div[text()='היו לאחרונה']</option></datalist></td><td>היו לאחרונה</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[text()='חדשים']<datalist><option>//div[text()='חדשים']</option></datalist></td><td>חדשים</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[text()='ימי הולדת החודש']<datalist><option>//div[text()='ימי הולדת החודש']</option></datalist></td><td>ימי הולדת החודש</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//a[text()='הצג את כולם']<datalist><option>//a[text()='הצג את כולם']</option></datalist></td><td>הצג את כולם</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[@class='app-groups-clients-scroll ']<datalist><option>//div[@class='app-groups-clients-scroll ']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='מאגר לקוחות']<datalist><option>//span[text()='מאגר לקוחות']</option><option>//span[text()='אגר לקוחות']</option></datalist></td><td>מאגר לקוחות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='(0)']<datalist><option>//span[text()='(0)']</option></datalist></td><td>verify number of client -(0)</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='more_wrap']<datalist><option>//div[@class='item__wrap']</option><option>//div[@class='more_wrap']</option></datalist></td><td>menu</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-list/ic_back.svg"]<datalist><option>//img[@src="/public/clients-list/ic_back.svg"]</option></datalist></td><td>back arrow</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='add-new-user-button__button']<datalist><option>//button[@class='add-new-user-button__button']</option></datalist></td><td>big add button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='הוסף לקוח חדש']<datalist><option>//span[text()='הוסף לקוח חדש']</option></datalist></td><td>big add button text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/clients-list/user-plus.svg"]<datalist><option>//img[@src="/public/clients-list/user-plus.svg"]</option></datalist></td><td>big add button icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option></datalist></td><td>small add button</td>
+</tr>
+</tbody></table>
+</body>
+</html>

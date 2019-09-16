@@ -210,5 +210,127 @@
 <tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon')]<datalist><option>//p[contains(text(), 'katalon')]</option></datalist></td><td>verify new user name in top of the menu</td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify "מאגר לקוחות" element</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='מאגר לקוחות']<datalist><option>//span[text()='מאגר לקוחות']</option></datalist></td><td>title text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='(0)']<datalist><option>//span[text()='(0)']</option></datalist></td><td>verify number of client -(0)</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify default services - 30min</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='פגישה 30 דקות']<datalist><option>//p[text()='פגישה 30 דקות']</option></datalist></td><td>1 service</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='כללית'])[1]<datalist><option>xpath=(//span[text()='כללית'])[1]</option></datalist></td><td>1 service element - כללית</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[1]<datalist><option>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[1]</option></datalist></td><td>1 service element -clock </td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='דקות'])[1]<datalist><option>xpath=(//span[text()='דקות'])[1]</option></datalist></td><td>1 service text- דקות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='30']<datalist><option>//span[text()='30']</option></datalist></td><td>1 service text - 30</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='₪'])[1]<datalist><option>xpath=(//span[text()='₪'])[1]</option></datalist></td><td>1 service text -₪</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='0'])[1]<datalist><option>xpath=(//span[text()='0'])[1]</option></datalist></td><td>1 service text - 0</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@id='styled-checkbox-2']<datalist><option>//input[@id='styled-checkbox-2']</option></datalist></td><td>1 service  -  checkbox editable</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>1 service - trash icon not visible</td>
+</tr>
+<tr><td>click</td><td>//input[@id='styled-checkbox-2']<datalist><option>//input[@id='styled-checkbox-2']</option></datalist></td><td>1 service - click on checkbox</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>1 service - trash icon visible</td>
+</tr>
+<tr><td>click</td><td>//input[@id='styled-checkbox-2']<datalist><option>//input[@id='styled-checkbox-2']</option></datalist></td><td>1 service - unchecked checkbox</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>1 service - trash icon not visible</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify default services - 45min</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='פגישה 45 דקות']<datalist><option>//p[text()='פגישה 30 דקות']</option><option>//p[text()='פגישה 45 דקות']</option></datalist></td><td>2 service</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='כללית'])[2]<datalist><option>xpath=(//span[text()='כללית'])[1]</option><option>xpath=(//span[text()='כללית'])[2]</option></datalist></td><td>2 service element - כללית</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[2]<datalist><option>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[1]</option><option>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[2]</option></datalist></td><td>2 service element -clock </td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='דקות'])[2]<datalist><option>xpath=(//span[text()='דקות'])[1]</option><option>xpath=(//span[text()='דקות'])[2]</option></datalist></td><td>2 service text- דקות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='45']<datalist><option>//span[text()='30']</option><option>//span[text()='45']</option></datalist></td><td>2 service text - 45</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='₪'])[2]<datalist><option>xpath=(//span[text()='₪'])[1]</option><option>xpath=(//span[text()='₪'])[2]</option></datalist></td><td>2 service text -₪</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='0'])[2]<datalist><option>xpath=(//span[text()='0'])[1]</option><option>xpath=(//span[text()='0'])[2]</option></datalist></td><td>2 service text - 0</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@id='styled-checkbox-3']<datalist><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-3']</option></datalist></td><td>2 service  -  checkbox editable</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>2 service - trash icon not visible</td>
+</tr>
+<tr><td>click</td><td>//input[@id='styled-checkbox-3']<datalist><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-3']</option></datalist></td><td>2 service - click on checkbox</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>2 service - trash icon visible</td>
+</tr>
+<tr><td>click</td><td>//input[@id='styled-checkbox-3']<datalist><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-3']</option></datalist></td><td>2 service - unchecked checkbox</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>2 service - trash icon visible</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify default services - 60min</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='פגישה 60 דקות']<datalist><option>//p[text()='פגישה 45 דקות']</option><option>//p[text()='פגישה 30 דקות']</option><option>//p[text()='פגישה 60 דקות']</option></datalist></td><td>3 service</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='כללית'])[3]<datalist><option>xpath=(//span[text()='כללית'])[2]</option><option>xpath=(//span[text()='כללית'])[1]</option><option>xpath=(//span[text()='כללית'])[3]</option></datalist></td><td>3 service element - כללית</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[3]<datalist><option>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[2]</option><option>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[1]</option><option>xpath=(//img[@src="/public/services/ic-time-copy.svg"])[3]</option></datalist></td><td>3 service element -clock </td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='דקות'])[3]<datalist><option>xpath=(//span[text()='דקות'])[2]</option><option>xpath=(//span[text()='דקות'])[1]</option><option>xpath=(//span[text()='דקות'])[3]</option></datalist></td><td>3 service text- דקות</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='60']<datalist><option>//span[text()='45']</option><option>//span[text()='30']</option><option>//span[text()='60']</option></datalist></td><td>3 service text - 60</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='₪'])[3]<datalist><option>xpath=(//span[text()='₪'])[2]</option><option>xpath=(//span[text()='₪'])[1]</option><option>xpath=(//span[text()='₪'])[3]</option></datalist></td><td>3 service text -₪</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//span[text()='0'])[3]<datalist><option>xpath=(//span[text()='0'])[2]</option><option>xpath=(//span[text()='0'])[1]</option><option>xpath=(//span[text()='0'])[3]</option></datalist></td><td>3 service text - 0</td>
+</tr>
+<tr><td>verifyEditable</td><td>//input[@id='styled-checkbox-4']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service  -  checkbox editable</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>3 service - trash icon not visible</td>
+</tr>
+<tr><td>click</td><td>//input[@id='styled-checkbox-4']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service - click on checkbox</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>3 service - trash icon visible</td>
+</tr>
+<tr><td>click</td><td>//input[@id='styled-checkbox-4']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service - unchecked checkbox</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>3 service - trash icon visible</td>
+</tr>
+</tbody></table>
 </body>
 </html>

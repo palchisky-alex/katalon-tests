@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-	<title>Reminder page verify - he</title>
+	<title>N_Reminder page verify - he</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -85,31 +85,19 @@
 <tr><td rowspan="1" colspan="3">verify reminders elements</td></tr>
 </thead>
 <tbody>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/back.svg"]<datalist><option>//img[@src="/public/reminders/back.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/back.svg"]<datalist><option>//img[@src="/public/reminders/back.svg"]</option></datalist></td><td>arrow</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='תזכורות']<datalist><option>//p[text()='תזכורות']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//p[text()='תזכורות']<datalist><option>//p[text()='תזכורות']</option></datalist></td><td>title</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/right-but.svg"]<datalist><option>//img[@src="/public/reminders/right-but.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/right-but.svg"]<datalist><option>//img[@src="/public/reminders/right-but.svg"]</option></datalist></td><td>menu</td>
 </tr>
-<tr><td>verifyEditable</td><td>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]<datalist><option>//input[@placeholder="הכנס טקסט שם לקוח אן תאריך..."]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/reminder.svg"]<datalist><option>//img[@src="/public/reminders/reminder.svg"]</option></datalist></td><td>big icon</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/magnifier.svg"]<datalist><option>//img[@src="/public/reminders/magnifier.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//p[text()='עדיין לא קבעת תזכורות']<datalist><option>//p[text()='קבעת לא קבעת תזכורות']</option><option>//p[text()='עדיין לא קבעת תזכורות']</option></datalist></td><td>text</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='הכל']<datalist><option>//p[text()='הכל']</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//p[contains(text(), 'תזכיר לך על משהו חשוב')]<datalist><option>//p[contains(text(), 'תזכיר לך על משהו חשוב')]</option></datalist></td><td>text</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='לא טופל']<datalist><option>//p[text()='לא טופל']</option></datalist></td><td></td>
-</tr>
-<tr><td>verifyVisible</td><td>//p[text()='תזכורות שלי']<datalist><option>//p[text()='תזכורות שלי']</option></datalist></td><td></td>
-</tr>
-<tr><td>verifyVisible</td><td>//p[@class='my-btn']<datalist><option>//p[@class='my-btn']</option></datalist></td><td>number  תזכורת שלי</td>
-</tr>
-<tr><td>verifyVisible</td><td>//p[@class='unread-btn']<datalist><option>//p[@class='unread-btn']</option></datalist></td><td>number  לא טופל</td>
-</tr>
-<tr><td>verifyVisible</td><td>//p[@class='all-btn']<datalist><option>//p[@class='all-btn']</option></datalist></td><td>number  הכל</td>
-</tr>
-<tr><td>verifyVisible</td><td>//div[@id='reminders']<datalist><option>//div[@class='swiper-container swiper-container-horizontal']</option><option>//div[@id='reminders']</option></datalist></td><td>containers</td>
-</tr>
-<tr><td>verifyVisible</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option></datalist></td><td>button add</td>
+<tr><td>verifyVisible</td><td>//div[@class='order-wrap']<datalist><option>//div[@class='order-wrap']</option></datalist></td><td>add new reminder button</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -117,7 +105,7 @@
 <tr><td rowspan="1" colspan="3">verify add reminder page</td></tr>
 </thead>
 <tbody>
-<tr><td>click</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option></datalist></td><td>button add</td>
+<tr><td>click</td><td>//div[@class='order-wrap']<datalist><option>//div[@class='order-wrap']</option></datalist></td><td>click on add new reminder button</td>
 </tr>
 <tr><td>verifyElementPresent</td><td>//div[@class='hidden']<datalist><option>//div[@class='hidden']</option></datalist></td><td>hidden list present in html</td>
 </tr>
@@ -167,9 +155,9 @@
 </tr>
 <tr><td>verifyEditable</td><td>//div[@class='search-wrap']/input[@placeholder="על איזה לקוח?"]<datalist><option>//div[@class='search-wrap']/input[@placeholder="על איזה לקוח?"]</option></datalist></td><td>verify input Editable</td>
 </tr>
-<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/reminders/magnifier.svg"])[2]<datalist><option>(//img[@src="/public/reminders/magnifier.svg"])[2]</option><option>xpath=(//img[@src="/public/reminders/magnifier.svg"])[2]</option></datalist></td><td>magnifier</td>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/magnifier.svg"]<datalist><option>(//img[@src="/public/reminders/magnifier.svg"])[2]</option><option>xpath=(//img[@src="/public/reminders/magnifier.svg"])[2]</option><option>//img[@src="/public/reminders/magnifier.svg"]</option></datalist></td><td>magnifier</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='על איזה לקוח?']<datalist><option>//p[text()='על איזה לקוח?']</option></datalist></td><td>text</td>
+<tr><td>verifyVisible</td><td>//p[text()='על איזה לקוח?']<datalist><option>//p[text()='על איזה לקוח?']</option></datalist></td><td>search placeholder</td>
 </tr>
 <tr><td>click</td><td>//img[@src="/public/reminders/user-def.svg"]<datalist><option>//input[@placeholder="על איזה לקוח?"]</option><option>//img[@src="/public/reminders/user-def.svg"]</option></datalist></td><td>close popap</td>
 </tr>
@@ -291,13 +279,9 @@
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/reminders/btn-not.svg"]<datalist><option>//img[@src="/public/reminders/btn-not.svg"]</option></datalist></td><td>close button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/phone-off.svg"]<datalist><option>//img[@src="/public/reminders/phone-off.svg"]</option></datalist></td><td>phone icon</td>
+<tr><td>verifyVisible</td><td>//button[@class="send_disabled"]<datalist><option>//img[@src="/public/reminders/save.svg"]</option><option>//button[@class="send_disabled"]</option></datalist></td><td>disable save button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/skip-forward.svg"]<datalist><option>//img[@src="/public/reminders/skip-forward.svg"]</option></datalist></td><td>forward icon</td>
-</tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/save.svg"]<datalist><option>//img[@src="/public/reminders/save.svg"]</option></datalist></td><td>save button</td>
-</tr>
-<tr><td>verifyVisible</td><td>//div[@class='btns-wrap']/p[text()='לדלג']<datalist><option>//div[@class='btns-wrap']/p[text()='סגור']</option><option>//div[@class='btns-wrap']/p[text()='לדלג']</option></datalist></td><td>לדלג</td>
+<tr><td>verifyVisible</td><td>//button[@class="skip"]<datalist><option>//div[@class='btns-wrap']/p[text()='סגור']</option><option>//div[@class='btns-wrap']/p[text()='לדלג']</option><option>//button[@class="skip"]</option></datalist></td><td>לדלג button</td>
 </tr>
 <tr><td>verifyEditable</td><td>//input[@type='tel']<datalist><option>//input[@type='tel']</option></datalist></td><td>tel input editable</td>
 </tr>
@@ -307,9 +291,11 @@
 </tr>
 <tr><td>verifyVisible</td><td>//input[@value='0546666666']<datalist><option>//input[@value='0546666666']</option></datalist></td><td>add tel validation</td>
 </tr>
-<tr><td>click</td><td>//img[@src="/public/reminders/save.svg"]<datalist><option>//img[@src="/public/reminders/save.svg"]</option></datalist></td><td>save tel</td>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/phone-off.svg"]<datalist><option>//img[@src="/public/reminders/phone-off.svg"]</option></datalist></td><td>add tel notification - phone icon</td>
 </tr>
-<tr><td>click</td><td>//img[@src="/public/reminders/btn-not.svg"]<datalist><option>//img[@src="/public/reminders/btn-not.svg"]</option></datalist></td><td></td>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/skip-forward.svg"]<datalist><option>//img[@src="/public/reminders/skip-forward.svg"]</option></datalist></td><td>add tel notification - forward icon</td>
+</tr>
+<tr><td>click</td><td>//p[text()='לשמור']<datalist><option>//img[@src="/public/reminders/save.svg"]</option><option>//p[text()='לשמור']</option></datalist></td><td>save tel</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
