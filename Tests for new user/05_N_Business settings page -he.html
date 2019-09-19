@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-	<title>N_Business settings page -he</title>
+	<title>05_N_Business settings page -he</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -29,7 +29,7 @@
 </tr>
 <tr><td>verifyVisible</td><td>//h3[@class='business_name']<datalist><option>//h3[text()='Aqua Plants']</option><option>//h3[@class='business_name']</option></datalist></td><td>business name</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='initiatives']<datalist><option>//p[text()='initiatives']</option></datalist></td><td>initiatives</td>
+<tr><td>verifyVisible</td><td>//span[text()='עצמאי']<datalist><option>//p[text()='initiatives']</option><option>//span[text()='עצמאי']</option></datalist></td><td>עצמאי</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='לקוחות שהצטרפו החודש']<datalist><option>//p[text()='לקוחות שהצטרפו החודש']</option></datalist></td><td>לקוחות שהצטרפו החודש</td>
 </tr>
@@ -62,6 +62,10 @@
 <tr><td>verifyVisible</td><td>//h4[text()='הגדרות עסק']<datalist><option>//h3[text()='הגדרות עסק ומשתמש']</option><option>//h3[text()='הגדרות יומן']</option><option>//h3[text()='הגדרות']</option><option>//h4[text()='הגדרות עסק']</option></datalist></td><td>h4 הגדרות עסק</td>
 </tr>
 <tr><td>verifyVisible</td><td>//h4[text()='פרסם את העסק שלך']<datalist><option>//h3[text()='הגדרות עסק ומשתמש']</option><option>//h3[text()='הגדרות יומן']</option><option>//h3[text()='הגדרות']</option><option>//h4[text()='פרסם את העסק שלך']</option></datalist></td><td>h4 פרסם את העסק שלך</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='עצמאי']<datalist><option>//span[text()='עצמאי']</option><option>//p[text()='initiatives']</option></datalist></td><td>title-עצמאי</td>
+</tr>
+<tr><td>verifyVisible</td><td>//h3[text()='סוג העסק:']<datalist><option>//h3[text()='סוג העסק:']</option></datalist></td><td>title - סוג העסק</td>
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/settings/media//business.svg"]<datalist><option>//img[@src="/public/settings/media//business.svg"]</option></datalist></td><td>business icon</td>
 </tr>
@@ -97,15 +101,11 @@
 <tr><td rowspan="1" colspan="3">check name input</td></tr>
 </thead>
 <tbody>
-<tr><td>verifyVisible</td><td>//h3[contains(text(), 'katalon_')]<datalist><option>//h3[contains(text(), 'katalon_')]</option></datalist></td><td>verify new user name in cover</td>
+<tr><td>verifyVisible</td><td>//h3[contains(text(), 'katalon_')]<datalist><option>//h3[contains(text(), 'katalon_')]</option><option>//h3[contains(text(), 'KatalonAfterChange')]</option></datalist></td><td>verify new user name in cover</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>verify new user name in input</td>
+<tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option><option>//p[contains(text(), 'KatalonAfterChange')]</option></datalist></td><td>verify new user name in input</td>
 </tr>
-<tr><td>storeText</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>katalon_user</td>
-</tr>
-<tr><td>click</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>click on katalon user input</td>
-</tr>
-<tr><td>verifyVisible</td><td>//input[@name='name']<datalist><option>//input[@name='name']</option></datalist></td><td>verify Visible name input</td>
+<tr><td>click</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[contains(text(), 'katalon_')]</option><option>//p[contains(text(), 'KatalonAfterChange')]</option></datalist></td><td>click on katalon user input</td>
 </tr>
 <tr><td>verifyEditable</td><td>//input[@name='name']<datalist><option>//input[@name='name']</option></datalist></td><td>verify editable name input</td>
 </tr>
@@ -117,13 +117,13 @@
 </tr>
 <tr><td>verifyVisible</td><td>//img[@src="/public/settings/media//save_not_active.svg"]<datalist><option>//img[@src="/public/settings/media//save_not_active.svg"]</option></datalist></td><td>disabled save button image</td>
 </tr>
-<tr><td>type</td><td>//input[@name='name']<datalist><option>//p[@class='config-value']</option><option>//input[@name='name']</option></datalist></td><td>${katalon_user}</td>
+<tr><td>type</td><td>//input[@name='name']<datalist><option>//p[@class='config-value']</option><option>//input[@name='name']</option></datalist></td><td>KatalonAfterChange</td>
 </tr>
-<tr><td>verifyVisible</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option><option>//button[@class='save-btn enabled']</option></datalist></td><td> save button enable</td>
+<tr><td>waitForVisible</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option><option>//button[@class='save-btn enabled']</option></datalist></td><td> save button enable</td>
 </tr>
 <tr><td>click</td><td>//button[@class='save-btn enabled']<datalist><option>//button[@class='save-btn enabled']</option><option>//button[@class='save-btn disabled']</option><option>//button[@class='save-btn enable']</option></datalist></td><td>click on save button</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[text()='Aqua Plants']</option><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>verify new company name</td>
+<tr><td>verifyVisible</td><td>//p[text()='KatalonAfterChange']<datalist><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[text()='Aqua Plants']</option><option>//p[contains(text(), 'katalon_')]</option><option>//p[text()='KatalonAfterChange']</option></datalist></td><td>verify new company name</td>
 </tr>
 <tr><td>storeText</td><td>//div[@class='business-name']/p<datalist><option>//div[@class='business-name']/p</option></datalist></td><td>userName</td>
 </tr>
@@ -313,9 +313,9 @@
 </tr>
 <tr><td>click</td><td>//p[text()='הגדרות עסק']<datalist><option>//p[text()='הגדרות עסק']</option></datalist></td><td>click on הגדרות עסק</td>
 </tr>
-<tr><td>verifyText</td><td>//h3[@class="business_name"]<datalist><option>//p[text()='Aqua Plants']</option><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[contains(text(), 'katalon_')]</option><option>${userName}</option><option>${katalon_user}</option><option>//h3[@class="business_name"]</option></datalist></td><td>${katalon_user}</td>
+<tr><td>verifyText</td><td>//h3[@class="business_name"]<datalist><option>//p[text()='Aqua Plants']</option><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[contains(text(), 'katalon_')]</option><option>${userName}</option><option>${katalon_user}</option><option>//h3[@class="business_name"]</option></datalist></td><td>KatalonAfterChange</td>
 </tr>
-<tr><td>verifyText</td><td>//p[contains(text(), 'katalon_')]<datalist><option>//h3[text()='Aqua Plants']</option><option>//h3[@class="business_name"]</option><option>//p[contains(text(), 'katalon_')]</option></datalist></td><td>${katalon_user}</td>
+<tr><td>verifyText</td><td>//p[contains(text(), 'KatalonAfterChange')]<datalist><option>//h3[text()='Aqua Plants']</option><option>//h3[@class="business_name"]</option><option>//p[contains(text(), 'katalon_')]</option><option>//p[contains(text(), 'KatalonAfterChange')]</option></datalist></td><td>KatalonAfterChange</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='0547613154']<datalist><option>//p[text()='0547613154']</option><option>xpath=(//p[@class='config-value'])[1]</option><option>//p[text()='Aqua Plants 2']</option><option>//p[text()='Aqua Plants ${time}']</option><option>xpath=(//p[@class='config-value'])[2]</option><option>//h3[text()='0547613154']</option></datalist></td><td>verify new phone</td>
 </tr>
@@ -335,7 +335,7 @@
 </tr>
 <tr><td>verifyVisible</td><td>//div[@id='menu_modal']<datalist><option>//div[@id='menu_modal']</option></datalist></td><td>verify Visible menu div</td>
 </tr>
-<tr><td>verifyText</td><td>//p[@class='business_name']<datalist><option>//p[text()='Aqua Plants']</option><option>//p[@class='business_name']</option></datalist></td><td>${katalon_user}</td>
+<tr><td>verifyText</td><td>//p[@class='business_name']<datalist><option>//p[text()='Aqua Plants']</option><option>//p[@class='business_name']</option></datalist></td><td>KatalonAfterChange</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='תל אביב, דיזנגוף 100, ישראל']<datalist><option>//p[text()='תל אביב, דיזנגוף 100, ישראל']</option></datalist></td><td>verify address in menu</td>
 </tr>
