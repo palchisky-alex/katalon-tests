@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-	<title>N_Creat temp client - he</title>
+	<title>08_N_Creat temp client - he</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -282,6 +282,22 @@
 <tr><td>verifyVisible</td><td>//span[text()='0547019283']<datalist><option>//div[@class='client-name']/h1</option><option>//div[@id='topnav']/div</option><option>//div/div/div/div</option><option>css=div.header</option><option>//span[text()='0547019283']</option></datalist></td><td>0547019283</td>
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='temp status']<datalist><option>//span[text()='temp status']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify new client in prop page</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//div[@class="carousel-item"])[1]/p[text()='1']<datalist><option>xpath=(//div[@class="carousel-item"])[1]/p[text()='0']</option><option>xpath=(//div[@class="carousel-item"])[1]/p[text()='1']</option></datalist></td><td>1 - "לקוחות שהצטרפו החודש" </td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//div[@class="carousel-item"])[2]/p[text()='1']<datalist><option>xpath=(//div[@class="carousel-item"])[2]/p[text()='0']</option><option>xpath=(//div[@class="carousel-item"])[2]/p[text()='1']</option></datalist></td><td>1 - "לקוחות שהצטרפו השנה"</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//div[@class="carousel-item"])[3]/p[text()='+0%']<datalist><option>xpath=(//div[@class="carousel-item"])[3]/p[text()='+0%']</option></datalist></td><td>+0% - החודש כמות ביקורים גדלה ב:</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//div[@class="carousel-item"])[4]/p[text()='+0%']<datalist><option>xpath=(//div[@class="carousel-item"])[4]/p[text()='+0%']</option></datalist></td><td>+0% -החודש הרווח גדל ב:</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
