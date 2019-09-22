@@ -34,7 +34,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">add temp service</td></tr>
+<tr><td rowspan="1" colspan="3">add first service</td></tr>
 </thead>
 <tbody>
 <tr><td>click</td><td>//*[@class='add-button add-rtl']<datalist><option>//*[@class='add-button add-rtl']</option></datalist></td><td></td>
@@ -59,12 +59,6 @@
 </tr>
 <tr><td>click</td><td>//span[text()='שייך לקטגוריה']<datalist><option>//span[text()='שייך לקטגוריה']</option></datalist></td><td>add category</td>
 </tr>
-</tbody></table>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr><td rowspan="1" colspan="3">add category</td></tr>
-</thead>
-<tbody>
 <tr><td>verifyVisible</td><td>//button[@disabled=""]<datalist><option>//button[@disabled=""]</option></datalist></td><td>verify "'disabled add category"' button</td>
 </tr>
 <tr><td>type</td><td>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]<datalist><option>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]</option></datalist></td><td>Test category selenium</td>
@@ -73,23 +67,21 @@
 </tr>
 <tr><td>click</td><td>//span[text()='הוסף קטגוריה חדשה']<datalist><option>//span[text()='הוסף קטגוריה חדשה']</option><option>//button[@class='create-button false']</option></datalist></td><td></td>
 </tr>
-<tr><td>click</td><td>//button[@class='bottom enabled']<datalist><option>//button[text()='הוסף טיפול חדש']</option><option>//button[@class='bottom enabled']</option></datalist></td><td></td>
+<tr><td>click</td><td>//button[@class='bottom enabled']<datalist><option>//button[@class='bottom enabled']</option><option>//button[text()='הוסף טיפול חדש']</option></datalist></td><td></td>
 </tr>
-<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option><option>https://atzma.im/he/catalog/services/categories</option><option>https://lista.atzma.im/he/catalog/services/categories</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">verify category creation</td></tr>
+<tr><td rowspan="1" colspan="3">verify first service</td></tr>
 </thead>
 <tbody>
-<tr><td>verifyVisible</td><td>//span[text()='Test category selenium']<datalist><option>//span[text()='Test category selenium']</option></datalist></td><td></td>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
 </tr>
 <tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test category selenium</td>
-</tr>
-<tr><td>verifyVisible</td><td>//span[text()='Test category selenium']<datalist><option>//p[text()='Test טיפול services_createQueue']</option><option>//p[text()='Test טיפול services_katalon']</option><option>//span[text()='Test category selenium']</option></datalist></td><td>find by  category - Test category selenium</td>
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='Test טיפול services_katalon']<datalist><option>//p[text()='Test טיפול services_katalon']</option></datalist></td><td>find by  service- Test category selenium</td>
 </tr>
@@ -101,17 +93,17 @@
 </tr>
 <tr><td>verifyVisible</td><td>xpath=(//span[text()='₪'])[1]<datalist><option>xpath=(//span[text()='₪'])[1]</option></datalist></td><td>new service text -₪</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='50']<datalist><option>xpath=(//span[text()='0'])[1]</option><option>//span[text()='50']</option></datalist></td><td>new service text - 50 shek</td>
+<tr><td>verifyVisible</td><td>//span[text()='50']<datalist><option>//span[text()='50']</option><option>xpath=(//span[text()='0'])[1]</option></datalist></td><td>new service text - 50 shek</td>
 </tr>
-<tr><td>verifyEditable</td><td>//div[@class='item__checkbox']/input<datalist><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-6']</option><option>//div[@class='item__checkbox']/input</option></datalist></td><td>new service  -  checkbox editable</td>
+<tr><td>verifyEditable</td><td>//div[@class='item__checkbox']/input<datalist><option>//div[@class='item__checkbox']/input</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-6']</option></datalist></td><td>new service  -  checkbox editable</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>new service - trash icon not visible</td>
 </tr>
-<tr><td>click</td><td>//div[@class='item__checkbox']/input<datalist><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-6']</option><option>//div[@class='item__checkbox']/input</option></datalist></td><td>new service - click on checkbox</td>
+<tr><td>click</td><td>//div[@class='item__checkbox']/input<datalist><option>//div[@class='item__checkbox']/input</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-6']</option></datalist></td><td>new service - click on checkbox</td>
 </tr>
 <tr><td>verifyVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>new service - trash icon visible</td>
 </tr>
-<tr><td>click</td><td>//div[@class='item__checkbox']/input<datalist><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-6']</option><option>//div[@class='item__checkbox']/input</option></datalist></td><td>new service - unchecked checkbox</td>
+<tr><td>click</td><td>//div[@class='item__checkbox']/input<datalist><option>//div[@class='item__checkbox']/input</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-6']</option></datalist></td><td>new service - unchecked checkbox</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>new service - trash icon not visible</td>
 </tr>
@@ -121,19 +113,9 @@
 </tr>
 <tr><td>verifyVisible</td><td>//div[@class='add-button add-rtl']<datalist><option>//div[@class='add-button add-rtl']</option></datalist></td><td>add service button</td>
 </tr>
-</tbody></table>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr><td rowspan="1" colspan="3">verify service</td></tr>
-</thead>
-<tbody>
-<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test category selenium</td>
-</tr>
 <tr><td>verifyVisible</td><td>//div[@class='services-list']//p<datalist><option>//p[text()='Test טיפול services_createQueue']</option><option>//div[@class='services-list']//p</option></datalist></td><td>verify created service in search</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='Test category selenium']<datalist><option>//span[text()='Test category selenium']</option><option>//p[text()='Test טיפול services_createQueue']</option><option>//p[text()='Test טיפול services_katalon']</option></datalist></td><td>find by  category - Test category selenium</td>
 </tr>
 <tr><td>click</td><td>//div[@class='services-list']//p<datalist><option>//p[text()='Test טיפול services_createQueue']</option><option>//p[text()='Test category selenium']</option><option>//div[@class='services-list']//p</option></datalist></td><td>click on service</td>
 </tr>
@@ -210,7 +192,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">delete temp service from list</td></tr>
+<tr><td rowspan="1" colspan="3">delete first service from list</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option></datalist></td><td></td>
@@ -266,7 +248,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">verify service deletion</td></tr>
+<tr><td rowspan="1" colspan="3">verify first service deletion</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option></datalist></td><td></td>
@@ -389,6 +371,8 @@
 <tr><td rowspan="1" colspan="3">modify second service</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services<datalist><option>https://lista.atzma.im/he/catalog/services</option></datalist></td><td></td>
+</tr>
 <tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
 </tr>
 <tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test טיפול services_katalon 2</td>
@@ -399,7 +383,7 @@
 </tr>
 <tr><td>click</td><td>xpath=(//img[@src="/public/services/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/services/plus.svg"])[2]</option></datalist></td><td>click on plus 2</td>
 </tr>
-<tr><td>type</td><td>//div[@class='edit-services__category-name']/input<datalist><option>//div[@class='edit-services__category-name']/input</option></datalist></td><td>Test טיפול services_katalon modify</td>
+<tr><td>type</td><td>//div[@class='edit-services__category-name']/input<datalist><option>//div[@class='edit-services__category-name']/input</option></datalist></td><td>modified service</td>
 </tr>
 <tr><td>click</td><td>//div[@class="category-name"]<datalist><option>//span[text()='שייך לקטגוריה']</option><option>//span[text()='Test category selenium']</option><option>//div[@class="category-name"]</option></datalist></td><td>add category</td>
 </tr>
@@ -407,27 +391,119 @@
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='הוסף קטגוריה חדשה']<datalist><option>//span[text()='הוסף קטגוריה חדשה']</option><option>//button[@class='create-button false']</option></datalist></td><td>verify "grey add button text</td>
 </tr>
-<tr><td>type</td><td>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]<datalist><option>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]</option></datalist></td><td>Test קטגוריה category selenium modify</td>
+<tr><td>type</td><td>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]<datalist><option>//input[@placeholder="נא הזינו שם של קטגוריה חדשה"]</option></datalist></td><td>modified category</td>
 </tr>
 <tr><td>click</td><td>//button[@class= 'create-button false']<datalist><option>//button[@class= 'create-button false']</option></datalist></td><td>click on save button</td>
+</tr>
+<tr><td>waitForNotVisible</td><td>//button[@class= 'create-button false']<datalist><option>//button[@class= 'create-button false']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//button[@class='bottom enabled']<datalist><option>//button[@class='bottom enabled']</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//button[@class='bottom enabled']<datalist><option>//button[@class='bottom enabled']</option><option>//button[text()='הוסף טיפול חדש']</option></datalist></td><td>save button</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">verify / delete service from service windows</td></tr>
+<tr><td rowspan="1" colspan="3">verify modified service</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
 </tr>
-<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test טיפול services_katalon modify</td>
+<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>modified service</td>
 </tr>
-<tr><td>verifyVisible</td><td>//p[text()='Test טיפול services_katalon modify']<datalist><option>//p[text()='Test services_katalon modify']</option><option>//p[text()='Test טיפול services_katalon']</option><option>//p[text()='Test טיפול services_katalon modify']</option></datalist></td><td>verify modify service in search</td>
+<tr><td>verifyVisible</td><td>//span[text()='modified category']<datalist><option>//span[text()='modified category']</option></datalist></td><td>verify modified category in search</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='Test קטגוריה category selenium modify']<datalist><option>//span[text()='Test category selenium modify']</option><option>//span[text()='Test קטגוריה category selenium']</option><option>//span[text()='Test קטגוריה category selenium modify']</option></datalist></td><td>verify modify category in search</td>
+<tr><td>verifyVisible</td><td>//p[text()='modified service']<datalist><option>//p[text()='Test טיפול services_katalon 2']</option><option>//div[@class='services-list']//p</option><option>//p[text()='Test טיפול services_createQueue']</option><option>//p[text()='modified service']</option></datalist></td><td>verify modified service in search</td>
+</tr>
+<tr><td>click</td><td>//p[text()='modified service']<datalist><option>//p[text()='Test טיפול services_katalon 2']</option><option>//div[@class='services-list']//p</option><option>//p[text()='Test טיפול services_createQueue']</option><option>//p[text()='Test category selenium']</option><option>//p[text()='modified service']</option></datalist></td><td>click on service</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='עריכת טיפול']<datalist><option>//span[text()='עריכת טיפול']</option></datalist></td><td>page title text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/ic_arrow_back.svg"]<datalist><option>//img[@src="/public/services/ic_arrow_back.svg"]</option></datalist></td><td>back arrow</td>
+</tr>
+<tr><td>verifyVisible</td><td>//input[@value='modified service']<datalist><option>//input[@value='Test טיפול services_katalon 2']</option><option>//input[@value="Test טיפול services_katalon"]</option><option>//input[@value="Test טיפול services_createQueue"]</option><option>//input[@value='modified service']</option></datalist></td><td>service name</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='שם של טיפול']<datalist><option>//span[text()='שם של טיפול']</option></datalist></td><td>service title</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='modified category']<datalist><option>//span[text()='Test קטגוריה category selenium 2']</option><option>//span[text()='Test category selenium']</option><option>//span[text()='modified category']</option></datalist></td><td>category name</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='שם של קטגוריה']<datalist><option>//span[text()='שם של קטגוריה']</option></datalist></td><td>catigory title</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/chevron-right.svg"]<datalist><option>//img[@src="/public/services/chevron-right.svg"]</option></datalist></td><td>arrow category</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='משך']<datalist><option>//span[text()='משך']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='מחיר']<datalist><option>//span[text()='מחיר']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='צבע:']<datalist><option>//div[text()='צבע:']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='45 דקות']<datalist><option>//div[text()='30 דקות']</option><option>//div[text()='10 דקות']</option><option>//div[text()='45 דקות']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[text()='₪ 55']<datalist><option>//div[text()='₪ 50']</option><option>//div[text()='$ 50']</option><option>//div[text()='₪ 55']</option></datalist></td><td>text</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/plus.svg"])[1]<datalist><option>xpath=(//img[@src="/public/services/plus.svg"])[1]</option></datalist></td><td>plus 1</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/plus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/services/plus.svg"])[2]</option></datalist></td><td>plus 2</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/minus.svg"])[1]<datalist><option>xpath=(//img[@src="/public/services/minus.svg"])[1]</option></datalist></td><td>minus 1</td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//img[@src="/public/services/minus.svg"])[2]<datalist><option>xpath=(//img[@src="/public/services/minus.svg"])[2]</option></datalist></td><td>minus 2</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/check.svg"]<datalist><option>//img[@src="/public/services/check.svg"]</option></datalist></td><td>checked color</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='circle-container']<datalist><option>//div[@class='circle-container']</option></datalist></td><td>color container </td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='bottom delete']<datalist><option>//button[@class='bottom delete']</option></datalist></td><td>delete button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='למחוק']<datalist><option>//button[text()='למחוק']</option></datalist></td><td>delete button text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='bottom disabled']<datalist><option>//button[@class='bottom disabled']</option></datalist></td><td>save button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='לשמור']<datalist><option>//button[text()='לשמור']</option></datalist></td><td>save button text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/plus-square.svg"]<datalist><option>//img[@src="/public/services/plus-square.svg"]</option></datalist></td><td>save button icon</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/delete-blue.svg"]<datalist><option>//img[@src="/public/services/delete-blue.svg"]</option></datalist></td><td>delete button icon </td>
+</tr>
+<tr><td>click</td><td>//button[@class='bottom delete']<datalist><option>//button[@class='bottom delete']</option><option>//img[@src="/public/services/delete-blue.svg"]</option></datalist></td><td>delete button icon </td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=(//div[@id='modal-content'])[1]<datalist><option>xpath=(//div[@id='modal-content'])[1]</option><option>xpath=(//div[@id='modal-content'])[3]</option></datalist></td><td>delete message div appeared</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/services/trash.svg"]<datalist><option>//img[@src="/public/services/trash.svg"]</option><option>xpath=(//img[@src="/public/services/trash.svg"])[3]</option></datalist></td><td>verify trash icon in message </td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='בטוח רוצים למחוק את הטיפול?']<datalist><option>//span[text()='בטוח רוצים למחוק את הטיפול?']</option></datalist></td><td>verify delete popup message</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='yes-btn']<datalist><option>//button[@class='yes-btn']</option></datalist></td><td>yes button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='אשר']<datalist><option>//button[text()='אשר']</option></datalist></td><td>yes button text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class='no-btn']<datalist><option>//button[@class='no-btn']</option></datalist></td><td>no button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='לבטל']<datalist><option>//button[text()='לבטל']</option></datalist></td><td>no button text</td>
+</tr>
+<tr><td>click</td><td>//button[text()='לבטל']<datalist><option>//button[text()='לבטל']</option></datalist></td><td>click on no button</td>
+</tr>
+<tr><td>waitForNotVisible</td><td>xpath=(//div[@id='modal-content'])[1]<datalist><option>xpath=(//div[@id='modal-content'])[1]</option><option>xpath=(//div[@id='modal-content'])[3]</option></datalist></td><td>delete message div closed</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>xpath=(//div[@id='modal-content'])[1]<datalist><option>xpath=(//div[@id='modal-content'])[1]</option><option>xpath=(//div[@id='modal-content'])[3]</option></datalist></td><td>delete message div closed</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete service from service windows</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/catalog/services/categories<datalist><option>https://lista.atzma.im/he/catalog/services/categories</option><option>https://atzma.im/he/catalog/services/categories</option><option>categoriesURL</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>modified service</td>
+</tr>
+<tr><td>verifyVisible</td><td>//p[text()='modified service']<datalist><option>//p[text()='Test services_katalon modify']</option><option>//p[text()='Test טיפול services_katalon']</option><option>//p[text()='Test טיפול services_katalon modify']</option><option>//p[text()='modified service']</option></datalist></td><td>verify modify service in search</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='modified category']<datalist><option>//span[text()='Test category selenium modify']</option><option>//span[text()='Test קטגוריה category selenium']</option><option>//span[text()='Test קטגוריה category selenium modify']</option><option>//span[text()='modified category']</option></datalist></td><td>verify modify category in search</td>
 </tr>
 <tr><td>verifyVisible</td><td>//span[text()='45']<datalist><option>//span[text()='45']</option></datalist></td><td>verify modify duration of service in search</td>
 </tr>
@@ -435,9 +511,9 @@
 </tr>
 <tr><td>click</td><td>//div[@class='services-list']//p<datalist><option>//div[@class='services-list']//p</option><option>//p[text()='Test טיפול services_createQueue']</option><option>//p[text()='Test category selenium']</option></datalist></td><td>click on service</td>
 </tr>
-<tr><td>verifyVisible</td><td>//input[@value='Test טיפול services_katalon modify']<datalist><option>//input[@value="Test services_katalon modify"]</option><option>//input[@value='Test טיפול services_katalon modify']</option></datalist></td><td>verify modify service </td>
+<tr><td>verifyVisible</td><td>//input[@value='modified service']<datalist><option>//input[@value="Test services_katalon modify"]</option><option>//input[@value='Test טיפול services_katalon modify']</option><option>//input[@value='modified service']</option></datalist></td><td>verify modify service </td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='Test קטגוריה category selenium modify']<datalist><option>//span[text()='Test category selenium modify']</option><option>//span[text()='Test קטגוריה category selenium modify']</option></datalist></td><td>verify modify category</td>
+<tr><td>verifyVisible</td><td>//span[text()='modified category']<datalist><option>//span[text()='Test category selenium modify']</option><option>//span[text()='Test קטגוריה category selenium modify']</option><option>//span[text()='modified category']</option></datalist></td><td>verify modify category</td>
 </tr>
 <tr><td>verifyVisible</td><td>//div[text()='45 דקות']<datalist><option>//div[text()='45 דקות']</option></datalist></td><td>verify modify duration</td>
 </tr>
@@ -459,7 +535,7 @@
 </tr>
 <tr><td>click</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option></datalist></td><td></td>
 </tr>
-<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>Test טיפול services_katalon modify</td>
+<tr><td>type</td><td>//input[@placeholder="הזינו שם של טיפול"]<datalist><option>//input[@placeholder="הזינו שם של טיפול"]</option><option></option></datalist></td><td>modified service</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//p[text()='Test טיפול services_katalon modify']<datalist><option>//p[text()='Test טיפול services_createQueue']</option><option>//p[text()='Test טיפול services_katalon modify']</option></datalist></td><td></td>
 </tr>
