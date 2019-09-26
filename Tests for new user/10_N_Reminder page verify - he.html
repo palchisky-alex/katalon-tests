@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-	<title>N_Reminder page verify - he</title>
+	<title>10_N_Reminder page verify - he</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -159,11 +159,11 @@
 </tr>
 <tr><td>verifyVisible</td><td>//p[text()='על איזה לקוח?']<datalist><option>//p[text()='על איזה לקוח?']</option></datalist></td><td>search placeholder</td>
 </tr>
-<tr><td>click</td><td>//img[@src="/public/reminders/user-def.svg"]<datalist><option>//input[@placeholder="על איזה לקוח?"]</option><option>//img[@src="/public/reminders/user-def.svg"]</option></datalist></td><td>close popap</td>
+<tr><td>click</td><td>//button[@class='close-btn close-btn-rtl']<datalist><option>//input[@placeholder="על איזה לקוח?"]</option><option>//img[@src="/public/reminders/user-def.svg"]</option><option>//button[@class='close-btn close-btn-rtl']</option></datalist></td><td>close popap</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//div[@class='chose-client-wrap']<datalist><option>//div[@class='chose-client-wrap']</option></datalist></td><td>verify popup NOT Visible </td>
 </tr>
-<tr><td>click</td><td>//div[@class='new-reminder-btn']/button[text()='לשמור']<datalist><option>//div[@class='new-reminder-btn']/button[text()='לשמור']</option></datalist></td><td></td>
+<tr><td>click</td><td>//div[@class='new-reminder-btn']/button[text()='לשמור']<datalist><option>//div[@class='new-reminder-btn']/button[text()='לשמור']</option><option>//div[@class='new-reminder-btn']/button[text()='בטל']</option></datalist></td><td>save</td>
 </tr>
 <tr><td>verifyLocation</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option></datalist></td><td></td>
 </tr>
@@ -173,7 +173,7 @@
 <tr><td rowspan="1" colspan="3">add new reminder</td></tr>
 </thead>
 <tbody>
-<tr><td>click</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option></datalist></td><td>button add</td>
+<tr><td>click</td><td>//div[@class='floating-button standartLeft']<datalist><option>//div[@class='floating-button standartLeft']</option><option>//div[@class='order-wrap']</option></datalist></td><td>button add</td>
 </tr>
 <tr><td>click</td><td>id=textarea-create<datalist><option>id=textarea-create</option><option>name=text</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לשמור'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='תזכורות חדשה'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ימים'])[1]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='▼'])[1]/preceding::textarea[1]</option><option>//textarea[@id='textarea-create']</option><option>//div[@id='create-modal']/div/div[2]/div/textarea</option><option>//textarea</option><option>css=#textarea-create</option><option>מה תרצה שנזכיר לך</option></datalist></td><td></td>
 </tr>
@@ -291,9 +291,9 @@
 </tr>
 <tr><td>verifyVisible</td><td>//input[@value='0546666666']<datalist><option>//input[@value='0546666666']</option></datalist></td><td>add tel validation</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/phone-off.svg"]<datalist><option>//img[@src="/public/reminders/phone-off.svg"]</option></datalist></td><td>add tel notification - phone icon</td>
+<tr><td>#</td><td>//img[@src="/public/reminders/phone-off.svg"]<datalist><option>//img[@src="/public/reminders/phone-off.svg"]</option></datalist></td><td>add tel notification - phone icon</td>
 </tr>
-<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/skip-forward.svg"]<datalist><option>//img[@src="/public/reminders/skip-forward.svg"]</option></datalist></td><td>add tel notification - forward icon</td>
+<tr><td>#</td><td>//img[@src="/public/reminders/skip-forward.svg"]<datalist><option>//img[@src="/public/reminders/skip-forward.svg"]</option></datalist></td><td>add tel notification - forward icon</td>
 </tr>
 <tr><td>click</td><td>//p[text()='לשמור']<datalist><option>//img[@src="/public/reminders/save.svg"]</option><option>//p[text()='לשמור']</option></datalist></td><td>save tel</td>
 </tr>
@@ -349,6 +349,8 @@
 <tr><td rowspan="1" colspan="3">verify reminder deletion</td></tr>
 </thead>
 <tbody>
+<tr><td>waitForNotVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>deletion window</td>
+</tr>
 <tr><td>verifyNotVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>deletion NotVisible window</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//span[text()='Temp Client for reminder katalon']<datalist><option>//span[text()='Temp Client for reminder katalon']</option><option>//span[text()='Temp Client katalon']</option></datalist></td><td>client name in search</td>
@@ -406,6 +408,26 @@
 <tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client for reminder katalon</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//div[text()='Temp Client for reminder katalon']<datalist><option>//div[text()='Temp Client for reminder katalon']</option></datalist></td><td>verify client Not Visible</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete empty reminder</td></tr>
+</thead>
+<tbody>
+<tr><td>#</td><td>Dlete empty reminder<datalist><option>Dlete empty reminder</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://lista.atzma.im/he/reminders<datalist><option>https://lista.atzma.im/he/reminders</option><option>//a[@href="/he/reminders"]</option></datalist></td><td>תזכורת</td>
+</tr>
+<tr><td>click</td><td>//div[@class='data']<datalist><option>//div[@class='data']</option></datalist></td><td>click on empty reminder</td>
+</tr>
+<tr><td>click</td><td>//p[text()='מחק']<datalist><option>//p[text()='מחק']</option></datalist></td><td>click on delete</td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>deletion window</td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[text()='מחק'])[3]<datalist><option>xpath=(//button[text()='מחק'])[3]</option><option>xpath=(//img[@src="/public/reminders/confirm.svg"])[3]</option></datalist></td><td>click on delete button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/reminders/reminder.svg"]<datalist><option>//img[@src="/public/reminders/reminder.svg"]</option></datalist></td><td>verify Visible Big icon - NO reminders</td>
 </tr>
 </tbody></table>
 </body>

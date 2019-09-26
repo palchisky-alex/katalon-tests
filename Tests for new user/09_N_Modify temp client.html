@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-	<title>N_Modify temp client</title>
+	<title>09_N_Modify temp client</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -43,13 +43,13 @@
 </tr>
 <tr><td>click</td><td>//label[text()='להסיף הערה חדשה']<datalist><option>//label[text()='להסיף הערה חדשה']</option></datalist></td><td></td>
 </tr>
-<tr><td>waitForElementPresent</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
+<tr><td>waitForVisible</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
 </tr>
 <tr><td>type</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td>הערות של לקוח זמני</td>
 </tr>
 <tr><td>verifyVisible</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option></datalist></td><td></td>
 </tr>
-<tr><td>waitForElementPresent</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
+<tr><td>waitForVisible</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//button[@class="save"]<datalist><option>//button[@class="save"]</option></datalist></td><td></td>
 </tr>
@@ -63,11 +63,11 @@
 </tr>
 <tr><td>click</td><td>xpath=(//span[text()='שמור'])[2]<datalist><option>xpath=(//span[text()='שמור'])[2]</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyElementNotPresent</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
+<tr><td>waitForNotVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
 </tr>
 <tr><td>click</td><td>//p[text()='שמור']<datalist><option>//p[text()='שמור']</option></datalist></td><td>save message</td>
 </tr>
-<tr><td>waitForElementPresent</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
+<tr><td>waitForVisible</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
 </tr>
 <tr><td>verifyVisible</td><td>//h1[text()='Temp Client katalon']<datalist><option>//h1[text()='Temp Client katalon']</option></datalist></td><td></td>
 </tr>
@@ -223,7 +223,7 @@
 </tr>
 <tr><td>click</td><td>//div[@class='save-btn']<datalist><option>//div[@class='save-btn']</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyElementNotPresent</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
+<tr><td>verifyNotVisible</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -281,6 +281,8 @@
 <tbody>
 <tr><td>click</td><td>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]</option></datalist></td><td></td>
 </tr>
+<tr><td>verifyVisible</td><td>//p[text()='חזור']<datalist><option>//p[text()='חזור']</option></datalist></td><td>verify return from editing option</td>
+</tr>
 <tr><td>click</td><td>//img[@src="/public/clients-details/butn-not.svg"]<datalist><option>//img[@src="/public/clients-details/butn-not.svg"]</option><option>//img[@src="/public/clients-details/x-circle.svg"]</option></datalist></td><td></td>
 </tr>
 <tr><td>verifyElementNotPresent</td><td>//input[@value="חוב  של לקוח זמני"]<datalist><option>//input[@placeholder="תיאור חוב"]</option><option>//input[@value="חוב של לקוח זמני"]</option><option>//input[@value="חוב  של לקוח זמני"]</option></datalist></td><td></td>
@@ -290,6 +292,8 @@
 <tr><td>click</td><td>//img[@src="/public/clients-details/plus.svg"]<datalist><option>//img[@src="/public/clients-details/plus.svg"]</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//div[@id='debts']//p[text()='שמור']<datalist><option>//div[@id='debts']//p[text()='שמור']</option><option>//button[@class='save']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForNotVisible</td><td>//p[text()='חזור']<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]</option><option>//p[text()='חזור']</option></datalist></td><td>editing finish </td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -301,7 +305,7 @@
 </tr>
 <tr><td>click</td><td>//img[@src="/public/clients-details/x-circle.svg"]<datalist><option>xpath=(//img[@src="/public/clients-details/ic_edit_stroke.svg"])[1]</option><option>//img[@src="/public/clients-details/x-circle.svg"]</option></datalist></td><td></td>
 </tr>
-<tr><td>verifyElementNotPresent</td><td>//textarea[text()='הערות של לקוח זמני']<datalist><option>//textarea[text()='הערות של לקוח זמני']</option></datalist></td><td></td>
+<tr><td>verifyNotVisible</td><td>//textarea[text()='הערות של לקוח זמני']<datalist><option>//textarea[text()='הערות של לקוח זמני']</option></datalist></td><td></td>
 </tr>
 <tr><td>type</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td>הערות של לקוח זמני חדש</td>
 </tr>
@@ -319,7 +323,7 @@
 </tr>
 <tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client katalon modify</td>
 </tr>
-<tr><td>waitForElementPresent</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon modify']</option><option>//div[text()='Temp Client katalon']</option></datalist></td><td></td>
+<tr><td>waitForVisible</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon modify']</option><option>//div[text()='Temp Client katalon']</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon modify']</option><option>//div[text()='Temp Client katalon']</option></datalist></td><td></td>
 </tr>
@@ -469,7 +473,7 @@
 </tr>
 <tr><td>verifyVisible</td><td>//div[@class='modal-body']<datalist><option>//div[@class='modal-body']</option></datalist></td><td></td>
 </tr>
-<tr><td>waitForElementPresent</td><td>//div[text()='מאגר לקוחות']<datalist><option>//div[text()='מאגר לקוחות']</option></datalist></td><td></td>
+<tr><td>waitForVisible</td><td>//div[text()='מאגר לקוחות']<datalist><option>//div[text()='מאגר לקוחות']</option></datalist></td><td></td>
 </tr>
 <tr><td>verifyLocation</td><td>https://lista.atzma.im/he/clients<datalist><option>https://lista.atzma.im/he/clients</option></datalist></td><td></td>
 </tr>
@@ -485,7 +489,7 @@
 </tr>
 <tr><td>type</td><td>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]<datalist><option>//input[@placeholder="חפש שם, טלפון, או הזן לקוח חדש"]</option></datalist></td><td>Temp Client katalon modify</td>
 </tr>
-<tr><td>verifyElementNotPresent</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon']</option><option>//div[text()='Temp Client katalon modify']</option></datalist></td><td></td>
+<tr><td>verifyNotVisible</td><td>//div[text()='Temp Client katalon modify']<datalist><option>//div[text()='Temp Client katalon']</option><option>//div[text()='Temp Client katalon modify']</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 </body>
