@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>12_N_Delete user account - he</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">open business settings</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//p[text()='הגדרות עסק']<datalist><option>//p[text()='הגדרות עסק']</option></datalist></td><td>click on "business setting"</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify elements on setting page</td></tr>
+</thead>
+<tbody>
+<tr><td>verifyVisible</td><td>//h3[text()='הגדרות משתמש']<datalist><option>//h3[text()='הגדרות משתמש']</option></datalist></td><td>title</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='Delete Account']<datalist><option>//button[text()='Delete Account']</option></datalist></td><td>button text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//img[@src="/public/settings/media//delete.svg"]<datalist><option>//img[@src="/public/settings/media//delete.svg"]</option></datalist></td><td>trash icon</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify elements on delete window</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//button[text()='Delete Account']<datalist><option>//button[text()='Delete Account']</option></datalist></td><td>click on delete button </td>
+</tr>
+<tr><td>verifyVisible</td><td>//div[@id='modal-content']<datalist><option>//div[@id='modal-content']</option></datalist></td><td>delete window is present</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='Delete Account']<datalist><option>//span[text()='Delete Account']</option></datalist></td><td>title of window</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class="support-btn"]<datalist><option>//button[@class="support-btn"]</option></datalist></td><td>"Contact support" is visible</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='Cancel']<datalist><option>//button[text()='Cancel']</option></datalist></td><td>'Cancel' button text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class="no-btn"]<datalist><option>//button[@class="no-btn"]</option></datalist></td><td>'Cancel' button is visible</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[text()='Delete']<datalist><option>//button[text()='Delete']</option></datalist></td><td>'Delete' button text</td>
+</tr>
+<tr><td>verifyVisible</td><td>//button[@class="yes-btn"]<datalist><option>//button[@class="yes-btn"]</option></datalist></td><td>'Delete' button is visible</td>
+</tr>
+<tr><td>click</td><td>//button[@class="no-btn"]<datalist><option>//button[@class="no-btn"]</option></datalist></td><td>click on "Cancel" button</td>
+</tr>
+<tr><td>waitForNotVisible</td><td>//div[@id='modal-content']<datalist><option>//div[@id='modal-content']</option></datalist></td><td>wait for "delete window" is not present</td>
+</tr>
+<tr><td>verifyNotVisible</td><td>//div[@id='modal-content']<datalist><option>//div[@id='modal-content']</option></datalist></td><td>verify "delete window" is not present</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete account</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://lista.atzma.im/he/settings<datalist><option>https://lista.atzma.im/he/settings</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//p[text()='הגדרות עסק']<datalist><option>//p[text()='הגדרות עסק']</option></datalist></td><td>click on "business setting"</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Delete Account']<datalist><option>//button[text()='Delete Account']</option></datalist></td><td>click on delete button </td>
+</tr>
+<tr><td>click</td><td>//button[@class="yes-btn"]<datalist><option>//button[@class="no-btn"]</option><option>//button[@class="yes-btn"]</option></datalist></td><td>click on "Cancel" button</td>
+</tr>
+<tr><td>waitForLocation</td><td>https://lista.atzma.im/he/login<datalist><option>https://lista.atzma.im/he/login</option></datalist></td><td>wait for login page</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify unsuccessful login</td></tr>
+</thead>
+<tbody>
+<tr><td>#</td><td>Login with old user<datalist><option>Login with old user</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/login<datalist><option>https://lista.atzma.im/he/login</option></datalist></td><td>login URL</td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[2]</option><option>//input[@name='email']</option><option>//div[@id='root']/div/div/form/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="email"]</option></datalist></td><td>katalon_${randomInt}@gmail.com</td>
+</tr>
+<tr><td>type</td><td>name=pass<datalist><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[1]</option><option>//input[@name='pass']</option><option>//div[@id='root']/div/div/form/div[3]/input</option><option>//div[3]/input</option><option>css=input[name="pass"]</option></datalist></td><td>${passwordForTest}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='להיכנס']<datalist><option>//button[text()='להיכנס']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='הירשם'])[1]/preceding::button[1]</option><option>//button[@type='submit']</option><option>//div[@id='root']/div/div/form/button[2]</option><option>//button[2]</option><option>css=button.login-form__button.login-button</option></datalist></td><td>click on enter button</td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='אנחנו לא מכירים את האימייל הזה והססמה ']<datalist><option>//span[text()='אנחנו לא מכירים את האימייל הזה והססמה ']</option></datalist></td><td>verify message on login page</td>
+</tr>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/login?error=incorrect<datalist><option>https://lista.atzma.im/he/login?error=incorrect</option></datalist></td><td>verify URL</td>
+</tr>
+<tr><td>#</td><td>Login is unsuccessful<datalist><option>Login is unsuccessful</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
