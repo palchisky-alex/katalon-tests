@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
@@ -35,7 +35,7 @@
 </tr>
 <tr><td>click</td><td>//label[text()='להסיף הערה חדשה']<datalist><option>//label[text()='להסיף הערה חדשה']</option></datalist></td><td>add note</td>
 </tr>
-<tr><td>waitForElementPresent</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
+<tr><td>waitForVisible</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td></td>
 </tr>
 <tr><td>type</td><td>//textarea[@placeholder="תיאור"]<datalist><option>//textarea[@placeholder="תיאור"]</option></datalist></td><td>הערות של לקוח זמני</td>
 </tr>
@@ -61,13 +61,13 @@
 </tr>
 <tr><td>waitForVisible</td><td>//button[text()='למחוק לקוח']<datalist><option>//button[text()='למחוק לקוח']</option></datalist></td><td>למחוק לקוח</td>
 </tr>
-<tr><td>verifyElementNotPresent</td><td>//span[text()='temp status']<datalist><option>//span[text()='temp status']</option></datalist></td><td></td>
-</tr>
 <tr><td>click</td><td>//img[@src="/public/clients-details/pencil.svg"]<datalist><option>//img[@src="/public/clients-details/pencil.svg"]</option><option>//span[text()='להוסיף סטטוס']</option></datalist></td><td></td>
 </tr>
 <tr><td>type</td><td>//textarea[@placeholder="להוסיף סטטוס"]<datalist><option>//textarea[@placeholder="להוסיף סטטוס"]</option></datalist></td><td>temp status</td>
 </tr>
 <tr><td>click</td><td>//img[@src="/public/clients-details/check-circle-status.svg"]<datalist><option>//img[@src="/public/clients-details/check-circle-status.svg"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>//span[text()='temp status']<datalist><option>//span[text()='temp status']</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -291,9 +291,9 @@
 </tr>
 <tr><td>verifyVisible</td><td>//input[@value='0546666666']<datalist><option>//input[@value='0546666666']</option></datalist></td><td>add tel validation</td>
 </tr>
-<tr><td>#</td><td>//img[@src="/public/reminders/phone-off.svg"]<datalist><option>//img[@src="/public/reminders/phone-off.svg"]</option></datalist></td><td>add tel notification - phone icon</td>
+<tr><td>verifyVisible</td><td>//*[@*='/public/reminders/sprite.svg#save']<datalist><option>//img[@src="/public/reminders/phone-off.svg"]</option><option>//*[@*='/public/reminders/sprite.svg#save']</option></datalist></td><td>save icon</td>
 </tr>
-<tr><td>#</td><td>//img[@src="/public/reminders/skip-forward.svg"]<datalist><option>//img[@src="/public/reminders/skip-forward.svg"]</option></datalist></td><td>add tel notification - forward icon</td>
+<tr><td>verifyVisible</td><td>//*[@*='/public/reminders/sprite.svg#skip']<datalist><option>//img[@src="/public/reminders/skip-forward.svg"]</option><option>//*[@*='/public/reminders/sprite.svg#skip']</option></datalist></td><td>skip icon</td>
 </tr>
 <tr><td>click</td><td>//p[text()='לשמור']<datalist><option>//img[@src="/public/reminders/save.svg"]</option><option>//p[text()='לשמור']</option></datalist></td><td>save tel</td>
 </tr>
