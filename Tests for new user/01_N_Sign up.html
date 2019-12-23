@@ -15,11 +15,13 @@
 </tr>
 <tr><td>store</td><td>bestappever<datalist><option>bestappever</option><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='או'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='להיכנס'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שכחת ססמה?'])[1]/preceding::input[1]</option><option>//input[@name='pass']</option><option>//div[@id='root']/div/div/form/div[3]/input</option><option>//div[3]/input</option><option>css=input[name="pass"]</option><option>name=email</option><option>password</option></datalist></td><td>password</td>
 </tr>
-<tr><td>store</td><td>https://lista.atzma.im/he/home<datalist><option>https://lista.atzma.im/he/home</option></datalist></td><td>Lista.Home.he</td>
+<tr><td>store</td><td>https://lista.atzma.im/he/home?utm_source=katalon-extension<datalist><option>https://lista.atzma.im/he/home</option><option>https://lista.atzma.im/he/home?utm_source=katalon-extension</option></datalist></td><td>Lista.Home.he</td>
 </tr>
 <tr><td>storeEval</td><td>Math.random()<datalist><option>Math.random()</option></datalist></td><td>randomInt</td>
 </tr>
 <tr><td>store</td><td>Pa$$w@rd<datalist><option>Pa$$w@rd</option></datalist></td><td>passwordForTest</td>
+</tr>
+<tr><td>storeEval</td><td>new Date().toJSON().slice(0,10)<datalist><option>new Date().toJSON().slice(0,10)</option></datalist></td><td>today</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -39,11 +41,11 @@
 <tr><td rowspan="1" colspan="3">go to sign up page</td></tr>
 </thead>
 <tbody>
-<tr><td>verifyVisible</td><td>//a[@href='/he/signup']<datalist><option>//a[@href='/he/signup']</option></datalist></td><td>verify sign up button</td>
+<tr><td>verifyVisible</td><td>//a[@href='/he/signup?utm_source=katalon-extension']<datalist><option>//a[@href='/he/signup']</option><option>//a[@href='/he/signup?utm_source=katalon-extension']</option></datalist></td><td>verify sign up button</td>
 </tr>
-<tr><td>click</td><td>//a[@href='/he/signup']<datalist><option>//a[@href='/he/signup']</option></datalist></td><td>click on sign up button</td>
+<tr><td>click</td><td>//a[@href='/he/signup?utm_source=katalon-extension']<datalist><option>//a[@href='/he/signup']</option><option>//a[@href='/he/signup?utm_source=katalon-extension']</option></datalist></td><td>click on sign up button</td>
 </tr>
-<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/signup<datalist><option>https://lista.atzma.im/he/signup</option></datalist></td><td>verify signup URL</td>
+<tr><td>verifyLocation</td><td>https://lista.atzma.im/he/signup?utm_source=katalon-extension<datalist><option>https://lista.atzma.im/he/signup</option><option>https://lista.atzma.im/he/signup?utm_source=katalon-extension</option></datalist></td><td>verify signup URL</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -319,15 +321,15 @@
 </tr>
 <tr><td>verifyVisible</td><td>xpath=(//span[text()='0'])[3]<datalist><option>xpath=(//span[text()='0'])[2]</option><option>xpath=(//span[text()='0'])[1]</option><option>xpath=(//span[text()='0'])[3]</option></datalist></td><td>3 service text - 0</td>
 </tr>
-<tr><td>verifyEditable</td><td>//input[@id='styled-checkbox-4']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service  -  checkbox editable</td>
+<tr><td>verifyEditable</td><td>//input[@id='styled-checkbox-3']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service  -  checkbox editable</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>3 service - trash icon not visible</td>
 </tr>
-<tr><td>click</td><td>//input[@id='styled-checkbox-4']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service - click on checkbox</td>
+<tr><td>click</td><td>//input[@id='styled-checkbox-3']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service - click on checkbox</td>
 </tr>
 <tr><td>verifyVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>3 service - trash icon visible</td>
 </tr>
-<tr><td>click</td><td>//input[@id='styled-checkbox-4']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service - unchecked checkbox</td>
+<tr><td>click</td><td>//input[@id='styled-checkbox-3']<datalist><option>//input[@id='styled-checkbox-3']</option><option>//input[@id='styled-checkbox-2']</option><option>//input[@id='styled-checkbox-4']</option></datalist></td><td>3 service - unchecked checkbox</td>
 </tr>
 <tr><td>verifyNotVisible</td><td>//img[@class='trash']<datalist><option>//img[@class='trash']</option></datalist></td><td>3 service - trash icon visible</td>
 </tr>

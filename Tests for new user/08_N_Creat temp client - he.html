@@ -31,7 +31,7 @@
 </tr>
 <tr><td>verifyVisible</td><td>//h1[text()='לקוח חדש']<datalist><option>//h1[text()='לקוח חדש']</option></datalist></td><td>לקוח חדש</td>
 </tr>
-<tr><td>verifyVisible</td><td>//span[text()='שמור']<datalist><option>//span[text()='שמור']</option></datalist></td><td>שמור</td>
+<tr><td>verifyVisible</td><td>//button[text()='שמור']<datalist><option>//span[text()='שמור']</option><option>//button[text()='שמור']</option></datalist></td><td>שמור</td>
 </tr>
 <tr><td>verifyVisible</td><td>//input[@placeholder="הזן שם של לקוח"]<datalist><option>//input[@placeholder="הזן שם של לקוח"]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='שמור'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='לקוח חדש'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='אתם לא תוכלו למצוא לקוחות ללא שם במאגר. נא הזינו שם ללקוח הזה'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])[1]/preceding::input[1]</option><option>//input[@value='Temp Client']</option><option>//div[@id='name']/div/label/input</option><option>//label/input</option><option>css=input.input-active</option></datalist></td><td>name input</td>
 </tr>
@@ -101,7 +101,7 @@
 </tr>
 <tr><td>click</td><td>//div[@id='debts']//p[text()='שמור']<datalist><option>//div[@id='debts']//p[text()='שמור']</option></datalist></td><td></td>
 </tr>
-<tr><td>click</td><td>xpath=(//span[text()='שמור'])[2]<datalist><option>xpath=(//span[text()='שמור'])[2]</option></datalist></td><td></td>
+<tr><td>click</td><td>xpath=(//button[text()='שמור'])[2]<datalist><option>xpath=(//span[text()='שמור'])[2]</option><option>xpath=(//button[text()='שמור'])[2]</option></datalist></td><td></td>
 </tr>
 <tr><td>verifyElementNotPresent</td><td>//div[@class='fade-content']<datalist><option>//div[@class='fade-content']</option></datalist></td><td>message about tel</td>
 </tr>
